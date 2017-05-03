@@ -1,0 +1,88 @@
+<svg id="enterprise_icon" xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-3, .cls-5 {
+        fill: none;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #b9b9c9;
+      }
+
+      .cls-2 {
+        fill: #b9b9c9;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        fill: #42bc79;
+      }
+
+      .cls-5 {
+        stroke: #42bc79;
+      }
+    </style>
+  </defs>
+  <g id="_2" data-name="2">
+    <path id="walls" class="cls-1" d="M33,15l18,4V75H33V15Z"/>
+    <g id="grid">
+      <rect class="cls-2" x="34" y="24" width="16" height="2"/>
+      <rect id="Rectangle_1051_copy_7" data-name="Rectangle 1051 copy 7" class="cls-2" x="34" y="34" width="16" height="2"/>
+      <rect id="Rectangle_1051_copy_8" data-name="Rectangle 1051 copy 8" class="cls-2" x="34" y="44" width="16" height="2"/>
+      <rect id="Rectangle_1051_copy_9" data-name="Rectangle 1051 copy 9" class="cls-2" x="34" y="54" width="16" height="2"/>
+      <rect id="Rectangle_1051_copy_10" data-name="Rectangle 1051 copy 10" class="cls-2" x="34" y="64" width="16" height="2"/>
+      <rect id="Rectangle_1051_copy_6" data-name="Rectangle 1051 copy 6" class="cls-2" x="41" y="26" width="2" height="48"/>
+    </g>
+  </g>
+  <g id="_1" data-name="1">
+    <path class="cls-3" d="M1,23L33,1V75H1S1,23.052,1,23Z"/>
+    <rect class="cls-2" x="8" y="26" width="2" height="25"/>
+    <rect id="Rectangle_1144_copy" data-name="Rectangle 1144 copy" class="cls-2" x="16" y="21" width="2" height="30"/>
+    <rect id="Rectangle_1144_copy_2" data-name="Rectangle 1144 copy 2" class="cls-2" x="24" y="16" width="2" height="35"/>
+    <path id="Rectangle_1125_copy_3" data-name="Rectangle 1125 copy 3" class="cls-3" d="M75.071,0.974H50.929V75.025H75.072S75.071,1.052,75.071.974Z"/>
+    <rect class="cls-2" x="54" y="7" width="18" height="2"/>
+    <rect id="Rectangle_1141_copy" data-name="Rectangle 1141 copy" class="cls-2" x="54" y="19" width="18" height="2"/>
+    <rect id="Rectangle_1141_copy_2" data-name="Rectangle 1141 copy 2" class="cls-2" x="54" y="13" width="18" height="2"/>
+  </g>
+  <g id="tree_2">
+    <rect id="Rectangle_1057_copy" data-name="Rectangle 1057 copy" class="cls-4" x="62" y="72" width="2" height="4"/>
+    <path class="cls-5" d="M63,55c2.487,0,4.01,10.791,4.01,13a4.01,4.01,0,0,1-8.02,0C58.99,65.791,60.435,55,63,55Z"/>
+  </g>
+  <g id="tree_1">
+    <rect id="Rectangle_1057_copy-2" data-name="Rectangle 1057 copy" class="cls-4" x="16" y="72" width="2" height="4"/>
+    <path class="cls-5" d="M17,58c2.488,0,4.01,7.791,4.01,10A4.322,4.322,0,0,1,17,72a4.322,4.322,0,0,1-4.01-4C12.99,65.791,14.435,58,17,58Z"/>
+  </g>
+</svg>

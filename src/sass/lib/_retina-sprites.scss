@@ -1,0 +1,223 @@
+$sprites: sprite-map("sprites/*.png", $spacing: 10px);
+$sprites-2x: sprite-map("sprites@2x/*.png", $spacing: 20px);
+
+$sprites-cb: sprite-map("cb_sprites/*.png", $spacing: 10px);
+$sprites-cb-2x: sprite-map("cb_sprites@2x/*.png", $spacing: 20px);
+
+$sprites-mmv: sprite-map("mmv_sprites/*.png", $spacing: 10px);
+$sprites-2x-mmv: sprite-map("mmv_sprites@2x/*.png", $spacing: 20px);
+
+$sprites-vulcun: sprite-map("vulcun_sprites/*.png", $spacing: 10px);
+$sprites-2x-vulcun: sprite-map("vulcun_sprites@2x/*.png", $spacing: 20px);
+
+$sprites-xmastree: sprite-map("xmas_tree_sprite/*.png", $spacing: 10px);
+$sprites-2x-xmastree: sprite-map("xmas_tree_sprite@2x/*.png", $spacing: 20px);
+
+$sprites-organizeme: sprite-map("organizeme_sprites/*.png", $spacing: 10px);
+$sprites-2x-organizeme: sprite-map("organizeme_sprites@2x/*.png", $spacing: 20px);
+
+$sprites-ror: sprite-map("ror_sprite/*.png", $spacing: 10px);
+$sprites-2x-ror: sprite-map("ror_sprite@2x/*.png", $spacing: 20px);
+
+@mixin s($name, $map: $sprites) {
+  background-image: sprite-url($sprites);
+  background-position: sprite-position($sprites, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites, $name));
+  width: image-width(sprite-file($sprites, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x);
+    background-size: (image-width(sprite-path($sprites-2x)) / 2) (image-height(sprite-path($sprites-2x)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x, $name), 1) / 2) round(nth(sprite-position($sprites-2x, $name), 2) / 2);
+  }
+}
+
+@mixin ps($name) {
+  content: '';
+  position: absolute;
+  @include s($name);
+}
+
+@mixin s-cb($name, $map: $sprites-cb) {
+  background-image: sprite-url($sprites-cb);
+  background-position: sprite-position($sprites-cb, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-cb, $name));
+  width: image-width(sprite-file($sprites-cb, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-cb-2x);
+    background-size: (image-width(sprite-path($sprites-cb-2x)) / 2) (image-height(sprite-path($sprites-cb-2x)) / 2);
+    background-position: round(nth(sprite-position($sprites-cb-2x, $name), 1) / 2) round(nth(sprite-position($sprites-cb-2x, $name), 2) / 2);
+  }
+}
+
+@mixin ps-cb($name) {
+  content: '';
+  position: absolute;
+  @include s-cb($name);
+}
+
+@mixin s-mmv($name, $map: $sprites-mmv) {
+  background-image: sprite-url($sprites-mmv);
+  background-position: sprite-position($sprites-mmv, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-mmv, $name));
+  width: image-width(sprite-file($sprites-mmv, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x-mmv);
+    background-size: (image-width(sprite-path($sprites-2x-mmv)) / 2) (image-height(sprite-path($sprites-2x-mmv)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x-mmv, $name), 1) / 2) round(nth(sprite-position($sprites-2x-mmv, $name), 2) / 2);
+  }
+}
+
+@mixin ps-mmv($name) {
+  content: '';
+  position: absolute;
+  @include s-mmv($name);
+}
+
+@mixin s-vulcun($name, $map: $sprites-vulcun) {
+  background-image: sprite-url($sprites-vulcun);
+  background-position: sprite-position($sprites-vulcun, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-vulcun, $name));
+  width: image-width(sprite-file($sprites-vulcun, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x-vulcun);
+    background-size: (image-width(sprite-path($sprites-2x-vulcun)) / 2) (image-height(sprite-path($sprites-2x-vulcun)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x-vulcun, $name), 1) / 2) round(nth(sprite-position($sprites-2x-vulcun, $name), 2) / 2);
+  }
+}
+
+@mixin ps-vulcun($name) {
+  content: '';
+  position: absolute;
+  @include s-vulcun($name);
+}
+
+@mixin s-xmastree($name, $map: $sprites-xmastree) {
+  background-image: sprite-url($sprites-xmastree);
+  background-position: sprite-position($sprites-xmastree, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-xmastree, $name));
+  width: image-width(sprite-file($sprites-xmastree, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x-xmastree);
+    background-size: (image-width(sprite-path($sprites-2x-xmastree)) / 2) (image-height(sprite-path($sprites-2x-xmastree)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x-xmastree, $name), 1) / 2) round(nth(sprite-position($sprites-2x-xmastree, $name), 2) / 2);
+  }
+}
+
+@mixin ps-xmastree($name) {
+  content: '';
+  position: absolute;
+  @include s-xmastree($name);
+}
+
+@mixin s-organizeme($name, $map: $sprites-organizeme) {
+  background-image: sprite-url($sprites-organizeme);
+  background-position: sprite-position($sprites-organizeme, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-organizeme, $name));
+  width: image-width(sprite-file($sprites-organizeme, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x-organizeme);
+    background-size: (image-width(sprite-path($sprites-2x-organizeme)) / 2) (image-height(sprite-path($sprites-2x-organizeme)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x-organizeme, $name), 1) / 2) round(nth(sprite-position($sprites-2x-organizeme, $name), 2) / 2);
+  }
+}
+
+@mixin ps-organizeme($name) {
+  content: '';
+  position: absolute;
+  @include s-xmastree($name);
+}
+
+@mixin s-ror($name, $map: $sprites-ror) {
+  background-image: sprite-url($sprites-ror);
+  background-position: sprite-position($sprites-ror, $name);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: image-height(sprite-file($sprites-ror, $name));
+  width: image-width(sprite-file($sprites-ror, $name));
+  display: block;
+  overflow: hidden;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    background-image: sprite-url($sprites-2x-ror);
+    background-size: (image-width(sprite-path($sprites-2x-ror)) / 2) (image-height(sprite-path($sprites-2x-ror)) / 2);
+    background-position: round(nth(sprite-position($sprites-2x-ror, $name), 1) / 2) round(nth(sprite-position($sprites-2x-ror, $name), 2) / 2);
+  }
+}
+
+@mixin ps-ror($name) {
+  content: '';
+  position: absolute;
+  @include s-ror($name);
+}

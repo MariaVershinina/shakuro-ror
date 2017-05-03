@@ -1,0 +1,19 @@
+{
+  "name": "shakuro.com",
+  "version": "0.1.0",
+  "author": "Yura Makarsky",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-coffee":"*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-csso": "*",
+    "grunt-htmlhint": "*",
+    "matchdep": "*"
+  }
+}

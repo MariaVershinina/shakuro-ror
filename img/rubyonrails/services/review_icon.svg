@@ -1,0 +1,73 @@
+<svg id="review_icon" xmlns="http://www.w3.org/2000/svg" width="76" height="76" viewBox="0 0 76 76">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #b9b9c9;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #b9b9c9;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #ea135a;
+      }
+    </style>
+  </defs>
+  <g id="browser">
+    <rect class="cls-1" x="6" y="68" width="30" height="2" rx="1" ry="1"/>
+    <rect id="Rectangle_646_copy" data-name="Rectangle 646 copy" class="cls-1" x="6" y="62" width="36" height="2" rx="1" ry="1"/>
+    <rect id="Rectangle_646_copy_2" data-name="Rectangle 646 copy 2" class="cls-1" x="6" y="56" width="22" height="2" rx="1" ry="1"/>
+    <path class="cls-2" d="M4,1H72a3,3,0,0,1,3,3V72a3,3,0,0,1-3,3H4a3,3,0,0,1-3-3V4A3,3,0,0,1,4,1Z"/>
+    <g id="icon_copy" data-name="icon copy">
+      <g>
+        <circle class="cls-1" cx="6" cy="6" r="2"/>
+        <circle id="Ellipse_5_copy" data-name="Ellipse 5 copy" class="cls-1" cx="12" cy="6" r="2"/>
+        <circle id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" class="cls-1" cx="18" cy="6" r="2"/>
+        <rect class="cls-1" x="2" y="10" width="72" height="2"/>
+      </g>
+    </g>
+  </g>
+  <g id="search">
+    <path class="cls-3" d="M58.485,51.243l-4.243,4.243L42.694,43.937a11,11,0,1,1,4.53-3.956Z"/>
+    <circle id="Ellipse_6_copy" data-name="Ellipse 6 copy" class="cls-4" cx="38" cy="34" r="6"/>
+  </g>
+</svg>

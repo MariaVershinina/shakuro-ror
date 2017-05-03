@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "want to enter?"
+AuthUserFile /var/www/shakuro5/.htpasswd
+#AuthUserFile /Users/yuramakarsky/Sites/shakuro/.htpasswd
+Require valid-user

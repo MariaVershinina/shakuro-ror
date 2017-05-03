@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="Web developer in Shakuro team main interests are optimization of web performance, UI/UX and HTML5/CSS3 features. Discover more about our experience.">
+  <meta content="width = device-width, initial-scale = 1, maximum-scale = 1" name="viewport">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="web">
+  <meta property="og:title" content="Website design and development for the best marketplace for digital art resources ever.">
+  <meta property="og:description" content="Web developer in Shakuro team main interests are optimization of web performance, UI/UX and HTML5/CSS3 features. Discover more about our experience.">
+  <meta property="og:image" content="https://shakuro.com/img/base/logotype.png">
+  <meta property="og:url" content="https://shakuro.com/">
+  <meta property="og:site_name" content="Website design and development for the best marketplace for digital art resources ever.">
+  <title>Ruby on Rails Website Development and RoR Design | Shakuro</title>
+  <link type="text/css" href="css/style_cb.css" rel="stylesheet" media="screen">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Shakuro">
+  <meta name="application-name" content="Shakuro">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--[if lt IE 7]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PC8WLX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PC8WLX');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for http://shakuro.com -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:288435,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <div class="before-loading"></div>
+  <header class="header">
+    <div class="content">
+      <div class="logo">
+        <a class="site-logo" href="index.html" target="_self">shakuro</a>
+      </div>
+      <nav>
+        <ul>
+          <li class="get-in-touch">
+            <a class="scroll-to-form nav-btn" href="#">Request a&nbsp;quote</a>
+          </li>
+          <li>
+            <a href="/blog" class="nav-link" title="Blog">Blog</a>
+          </li>
+          <li>
+            <a href="showcase.html" class="nav-link">showcase</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="close"></div>
+      </div>
+    </div>
+  </header>
+  <div class="hvb-block">
+    <section class="hvb-bg">
+      <div class="hvb-video-cont imp-visible" style="top: -23px;">
+        <video id="hvb-video-bg" preload="auto" autoplay loop="loop" muted="">
+          <source src="video/cbVideoBg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+          <source src="video/cbVideoBg.webm" type="video/webm">
+        </video>
+        <img class="hvb-video-bg-img" src="img/cb/cbVideoBg.jpg" alt="">
+      </div>
+      <div class="hvb-img-bg"></div>
+    </section>
+
+    <section class="hvb-content">
+      <div class="hvb-vert-centr">
+        <div class="content">
+          <span class="hvb-logo">cubebrush</span>
+          <h1 class="hvb-stamp">Website design and development for the best marketplace for digital art resources ever.</h1>
+          <div class="hvb-btn-block">
+            <a href="https://cubebrush.co/?page=1" target="_blank" class="btn" title="Go to the website">Go to the website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="about-block">
+      <div class="content">
+        <span class="section-title">About</span>
+        <p>Cubebrush is&nbsp;an&nbsp;online marketplace built by&nbsp;artists, for artists. A&nbsp;place they can buy digital art resources to&nbsp;use wherever they like, personally or&nbsp;commercially. We&rsquo;ve developed Cubebrush to&nbsp;work especially well for artists and students in&nbsp;the film, game, media and entertainment industries. Though, we&nbsp;believe Cubebrush can be&nbsp;massively useful regardless of&nbsp;the industry.</p>
+      </div>
+    </section>
+    <section class="b56">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <span class="section-title">Screens</span>
+            <p>Cubebrush was built to&nbsp;look beautiful. Our minimalistic flat design allows for full legibility and extremely quick performance on&nbsp;all devices while keeping its aesthetics.</p>
+          </div>
+        </div>
+      </div>
+      <div class="default-display"></div>
+      <div class="retina-display"></div>
+    </section>
+    <section class="approach-block">
+      <div class="content">
+        <div class="text">
+          <h2 class="section-title">Our Approach</h2>
+          <p>Shakuro developed Cubebrush throughout its full project lifecycle. This involved strategy and planning, prototyping, designing, development and then support. Working on&nbsp;all stages has allowed&nbsp;us to&nbsp;achieve outstanding results with Cubebrush.</p>
+        </div>
+        <ul>
+          <li>
+            <figure class="thumb-item prototype">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/001_Prototype_icon_white.svg" alt="Prototype">
+              </div>
+              <figcaption>
+                <h3 class="thumb-title">Prototype</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="thumb-item design">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/002_Design_icon_white.svg" alt="Design">
+              </div>
+              <figcaption>
+                <h3 class="thumb-title">Design</h3>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="thumb-item develop">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/003_Development_icon_white.svg" alt="Development">
+              </div>
+              <figcaption>
+                <h3 class="thumb-title">Development</h3>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="formats-block">
+      <div class="content">
+        <span class="section-title">Icons for files</span>
+        <ul class="formats-list">
+          <li class="icon-1">pdf</li>
+          <li class="icon-2">txt</li>
+          <li class="icon-3">word</li>
+          <li class="icon-4">opendoc</li>
+          <li class="icon-5">excel</li>
+          <li class="icon-6">video</li>
+          <li class="icon-7">music</li>
+          <li class="icon-8">sketchup</li>
+          <li class="icon-9">psd</li>
+          <li class="icon-10">illustrator</li>
+          <li class="icon-11">after effects</li>
+          <li class="icon-12">eps</li>
+          <li class="icon-13">images</li>
+          <li class="icon-14">3d models</li>
+          <li class="icon-15">archives</li>
+          <li class="icon-16">sketchbook</li>
+          <li class="icon-17">exe</li>
+          <li class="icon-18">brushes</li>
+          <li class="icon-19">html</li>
+          <li class="icon-20">texture</li>
+          <li class="icon-21">corel</li>
+          <li class="icon-22">cinema 4d</li>
+          <li class="icon-23">3ds max</li>
+          <li class="icon-24">unity</li>
+          <li class="icon-25">maya</li>
+          <li class="icon-26">zbrush</li>
+          <li class="icon-27">blender</li>
+          <li class="icon-28">painter</li>
+          <li class="icon-29">keyshot</li>
+          <li class="icon-30">manga</li>
+          <li class="icon-31">default icon</li>
+        </ul>
+      </div>
+    </section>
+    <section class="b59">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <span class="section-title">Facts</span>
+            <p>Through the design and development stages, we&nbsp;made use of&nbsp;UI&nbsp;Toolkit. This meant that multiple developers could work simultaneously on&nbsp;the project while keeping consistently and flow throughout our work.</p>
+          </div>
+          <ul>
+            <li>
+              <div class="thumb-item">
+                <div class="tasks">
+                  600+
+                  <span>tasks</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-item">
+                <div class="together">
+                  20
+                  <span>month together</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-item">
+                <div class="code">
+                  512k
+                  <span>lines of code</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="workflow-block">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <span class="section-title">Workflow</span>
+            <p>We&nbsp;use a&nbsp;lean approach to&nbsp;our workflow. We&nbsp;go&nbsp;through iterations of&nbsp;design and development, continually observing and refining our work. This flexibility allows&nbsp;us to&nbsp;ensure the product grows in&nbsp;a&nbsp;way we&rsquo;re all happy with.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image"></div>
+    </section>
+    <section class="b18">
+      <div class="content">
+        <img src="img/cb/Marc-Brunet.jpg" alt="Marc Brunet from Cubebrush about Shakuro">
+        <span class="section-title">Marc Brunet</span>
+        <span>Founder, cubebrush.co</span>
+        <p>From the very beginning of&nbsp;the project I&rsquo;ve had the chance to&nbsp;work with incredible developers who helped build and design this new marketplace platform into the massive application it&nbsp;is&nbsp;today and are still hard at&nbsp;work improving it&nbsp;as&nbsp;we&nbsp;grow. I&nbsp;love that what started as&nbsp;a&nbsp;client/customer relationship has evolved into more of&nbsp;a&nbsp;partnership and developing Cubebrush with the team on&nbsp;a&nbsp;daily basis has been (and still&nbsp;is) a&nbsp;joy and an&nbsp;honor. We&nbsp;have a&nbsp;lot of&nbsp;awesome features left to&nbsp;build and&nbsp;I look forward to&nbsp;many more years of&nbsp;working together.</p>
+      </div>
+    </section>
+    <section class="drop-us-block drop-us-block--white">
+      <div class="content">
+        <div class="row">
+          <div class="form-wrapper">
+            <div class="form">
+              <span class="form-title">Have an&nbsp;idea?</span>
+              <span class="form-sub-title">We&nbsp;are always looking for our next great project</span>
+              <form action="contact-us.php" id="contactus" method="post">
+                <div>
+                  <textarea name="message" placeholder="Let's talk about it!"></textarea>
+                </div>
+                <div>
+                  <div>
+                    <input type="text" name="email" placeholder="name@mail.com">
+                  </div>
+                  <input type="button" name="submit" value="Send message">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project-pagination-block section-02">
+      <div class="content">
+        <a href="vulcun.html" class="project-pagination-prev" title="Prev Project - Vulcun">Prev <span>Project</span> <span class="project-pagination-name">Vulcun</span></a>
+        <a href="cgplus.html" class="project-pagination-next" title="Next Project - COMPUTER GRAPHICS +">Next <span>Project</span> <span class="project-pagination-name">COMPUTER GRAPHICS +</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="content">
+      <div class="footer-top-part">
+        <div class="footer-logo">
+          <a class="footer-site-logo" href="index.html" target="_self">shakuro</a>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Extras</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="javascript:void(0)" class="footer-nav-link footer-nav-link--disable" title="Coming soon" data-original-title="Coming soon" data-placement="bottom" data-toggle="tooltip">ROR Development</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="/blog" class="footer-nav-link" title="Blog">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Where we are</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <p class="footer-nav-txt">2035 Sunset Lake Rd #2, Newark, 19702, Delaware, USA</p>
+                  <p class="footer-nav-txt">2/6 Tramvaynaya st. 350000, Krasnodar, Russia</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Contact</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a class="footer-nav-tel" href="tel:+16465200670">+1&nbsp;646&nbsp;520 0670</a>
+                  <a class="footer-nav-email" href="mailto:hello@shakuro.com">hello@shakuro.com</a>
+                  <ul class="footer-soc-list">
+                    <li class="footer-soc-item">
+                      <a href="https://twitter.com/shakuro" class="footer-soc-icon-tweeter footer-soc-link" title="Tweeter"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://dribbble.com/shakuro" class="footer-soc-icon-dribbble footer-soc-link" title="Dribbble"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://www.behance.net/shakuro" class="footer-soc-icon-behance footer-soc-link" title="Behance"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://www.facebook.com/shakurocom/" class="footer-soc-icon-facebook footer-soc-link" title="Facebook"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-part">
+        <div class="footer-copyright">
+          <p class="footer-copyright-txt">&copy;&nbsp;2006&nbsp;&mdash; 2016 Shakuro</p>
+        </div>
+        <ul class="footer-partners-list">
+          <li class="footer-partners-item">
+            <span class="partner-clutch-icon"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div id="fixed"></div>
+  <div id="mobile-block">
+    <div class="mobile-menu">
+      <div class="content">
+        <nav>
+          <ul>
+            <li>
+              <a class="touch-enable" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="touch-enable" href="showcase.html">Showcase</a>
+            </li>
+            <li>
+              <a class="touch-enable" href="/blog" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a class="get-in-touch-mobile touch-enable" href="#">Request a&nbsp;quote</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="we-are-on">
+          <div class="separator">
+            <div>We&nbsp;are&nbsp;on</div>
+          </div>
+          <ul class="social-mobile">
+            <li class="dribble">
+              <a class="touch-enable" href="https://dribbble.com/shakuro">Dribbble</a>
+            </li>
+            <li class="behance">
+              <a class="touch-enable" href="https://www.behance.net/shakuro">Behance</a>
+            </li>
+            <li class="facebook">
+              <a class="touch-enable" href="https://www.facebook.com/shakurocom/">facebook</a>
+            </li>
+            <li class="twitter">
+              <a class="touch-enable" href="https://twitter.com/shakuro">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/cb.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,956 @@
+p {
+  color: $gray-l3;
+}
+
+/*main-banner-block----------------------------------------------------[BEGIN]*/
+  .mb-block {
+    width: 100%;
+    height: 925px;
+    position: relative;
+    font-family: "Montserrat-Light", sans-serif;
+
+    .mb-title {
+      display: inline-block;
+      position: relative;
+      font-size: 48px;
+      line-height: 90px;
+      letter-spacing: .5px;
+      font-weight: 400;
+      color: $blue-d1;
+      text-transform: capitalize;
+      padding: 0 0 4px;
+
+      &:after {
+        content: '';
+        background: $blue-d1;
+        opacity: .58;
+        width: 90px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -45px;
+      }
+    }
+
+    .mb-txt {
+      display: inline-block;
+      width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      color: $blue-d1;
+      padding: 22px 0 22px;
+    }
+  }
+
+  .mb-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/xmastree/mb-bg.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    @include transition(opacity .3 linear);
+    opacity: 1;
+  }
+
+  .mb-wrapper {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mb-vert-centr {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .mb-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: -237px auto 0;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+/*main-banner-block------------------------------------------------------[END]*/
+
+/*approach-block-------------------------------------------------------[BEGIN]*/
+  .approach-block {
+    padding-bottom: 90px;
+    background-color: $gray-l6;
+    border-top: 1px solid $gray-l5;
+    border-bottom: 1px solid $gray-l5;
+    @extend .title-brdr;
+    @extend .approach-dark-theme;
+    @extend .three-column-block;
+
+    &:before {
+      content: none;
+    }
+
+    .section-title {
+      color: #000;
+
+      &:before {
+        background-color: #ddd;
+      }
+    }
+
+    ul {
+      width: 100%;
+      padding: 0;
+      margin-top: 56px;
+      @include ib;
+      @include clearfix();
+    }
+
+    li {
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    figcaption {
+      width: 100%;
+      padding: 28px 0 0;
+    }
+
+    .thumb-item {
+      @include ib;
+      @include clearfix();
+      vertical-align: top;
+    }
+
+    .thumb-title {
+      color: $gray-l4;
+    }
+
+    .thumb-img-wrapper {
+      width: 100%;
+      height: 120px;
+      text-align: center;
+    }
+
+    .prototype {
+      img {
+        width: 135px;
+      }
+    }
+
+    .design {
+      img {
+        width: 144px;
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .develop {
+      img {
+        width: 126px;
+      }
+    }
+  }
+/*approach-block---------------------------------------------------------[END]*/
+
+.idea-block,
+.input-data-block {
+  overflow: hidden;
+}
+
+/*idea-block-----------------------------------------------------------[BEGIN]*/
+  .idea-block {
+    @extend .base-block;
+    text-align: left;
+    min-height: 993px;
+    padding-top: 100px;
+
+    .content {
+      @include clearfix();
+    }
+
+    .descr-block {
+      width: 440px;
+      float: right;
+      padding-top: 94px;
+      position: relative;
+    }
+  }
+
+  .idea-bg-wrapper {
+    .image {
+      width: 453px;
+      height: 793px;
+      background-image: url(../img/xmastree/idea-bg.png);
+      background-repeat: no-repeat;
+      background-position: top left;
+      top: 0;
+      right: 502px;
+      position: absolute;
+      z-index: 2;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .image {
+        background-image: url(../img/xmastree/idea-bg@2x.png);
+        background-size: 453px 793px;
+      }
+    }
+  }
+/*idea-block-------------------------------------------------------------[END]*/
+
+/*input-data-block-----------------------------------------------------[BEGIN]*/
+  .input-data-block {
+    position: relative;
+    width: 100%;
+    font-family: "Montserrat-Light", sans-serif;
+    text-align: left;
+
+    .content {
+      @include clearfix();
+      max-width: 1020px;
+    }
+
+    .descr-block {
+      position: relative;
+      width: 440px;
+      padding-top: 94px;
+      margin-right: 28px;
+      z-index: 2;
+    }
+
+    .descr-align-left {
+      float: left;
+    }
+
+    .descr-align-right {
+      float: right;
+    }
+
+    .image {
+      background-repeat: no-repeat;
+      background-position: top left;
+      top: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  .input-data-item {
+    position: relative;
+  }
+
+  .input-data-item-1 {
+    min-height: 413px;
+
+    .image {
+      width: 668px;
+      height: 413px;
+      left: 333px;
+      background-image: url(../img/xmastree/input-data-bg-1.png);
+    }
+  }
+
+  .input-data-item-2 {
+    min-height: 476px;
+    margin: 100px 0 0;
+
+    .descr-block {
+      padding-top: 122px;
+    }
+
+    .image {
+      width: 893px;
+      height: 476px;
+      right: 63px;
+      background-image: url(../img/xmastree/input-data-bg-2.png);
+    }
+  }
+
+  .input-data-item-3 {
+    min-height: 422px;
+    margin: 127px 0 0;
+
+    .descr-block {
+      padding-top: 58px;
+    }
+
+    .image {
+      width: 831px;
+      height: 422px;
+      left: 186px;
+      background-image: url(../img/xmastree/input-data-bg-3.png);
+    }
+  }
+
+  .input-data-item-4 {
+    min-height: 468px;
+    margin: 109px 0 0;
+
+    .descr-block {
+      padding-top: 62px;
+    }
+
+    .image {
+      width: 914px;
+      height: 445px;
+      right: 64px;
+      background-image: url(../img/xmastree/input-data-bg-4.png);
+    }
+  }
+/*input-data-block-------------------------------------------------------[END]*/
+
+/*second-main-banner-block---------------------------------------------[BEGIN]*/
+  .smb-block {
+    width: 100%;
+    height: 993px;
+    position: relative;
+    @include transition(height .3s ease-in-out);
+  }
+
+  .smb-bg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-image: url(../img/xmastree/smb-bg.jpg);
+  }
+/*second-main-banner-block-----------------------------------------------[END]*/
+
+/*christmas-toys-block-------------------------------------------------[BEGIN]*/
+  .xmas-toys-block {
+    position: relative;
+    width: 100%;
+    font-family: "Montserrat-Light", sans-serif;
+    padding-top: 95px;
+    padding-bottom: 90px;
+    background-color: $gray-l6;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/xmastree/xmas-toy-bg.png);
+    border-top: 1px solid $gray-l5;
+
+    .content {
+      max-width: 1090px;
+    }
+
+    .section-title-aux {
+      text-align: center;
+    }
+  }
+
+  .xmas-toys-list {
+    position: relative;
+    margin: 65px 0 0;
+    left: 13px;
+    width: 100%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    text-align: center;
+    text-align-last: center;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .xmas-toys-item {
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 193px;
+    margin: 10px 15px;
+    text-align: center;
+    text-align-last: center;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+
+    @for $i from 1 through 5 {
+      .icon-#{$i} {
+        &:before {
+          @include ps-xmastree(xmas-toy-#{$i});
+        }
+      }
+    }
+  }
+/*christmas-toys-block---------------------------------------------------[END]*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .input-data-item-1 {
+    .image {
+      background-image: url(../img/xmastree/input-data-bg@2x-1.png);
+      background-size: 668px 413px;
+    }
+  }
+
+  .input-data-item-2 {
+    .image {
+      background-image: url(../img/xmastree/input-data-bg@2x-2.png);
+      background-size: 893px 476px;
+    }
+  }
+
+  .input-data-item-3 {
+    .image {
+      background-image: url(../img/xmastree/input-data-bg@2x-3.png);
+      background-size: 831px 422px;
+    }
+  }
+
+  .input-data-item-4 {
+    .image {
+      background-image: url(../img/xmastree/input-data-bg@2x-4.png);
+      background-size: 914px 445px;
+    }
+  }
+
+  .smb-bg {
+    background-size: 1920px 993px;
+    background-image: url(../img/xmastree/smb-bg@2x.jpg);
+  }
+
+  /*christmas-toys-block-----------------------------------------------[BEGIN]*/
+  .xmas-toys-block {
+    background-size: 1758px 514px;
+    background-image: url(../img/xmastree/xmas-toy-bg@2x.png);
+  }
+  /*christmas-toys-block-------------------------------------------------[END]*/
+}
+
+@media screen and (min-width: 1920px) {
+  /*second-main-banner-block-------------------------------------------[BEGIN]*/
+    .smb-bg {
+      background-position: center center;
+    }
+  /*second-main-banner-block---------------------------------------------[END]*/
+
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-bg {
+      background-position: 50% 50%;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 1024px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-block {
+      height: 493px;
+
+      .mb-title {
+        font-size: 28px;
+        line-height: 42px;
+        padding-bottom: 23px;
+      }
+
+      .mb-txt {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 28px 20px 0;
+      }
+    }
+
+    .mb-bg {
+      background-image: url(../img/xmastree/mb-bg-tablet.jpg);
+      background-size: 1160px 558px;
+      background-position: calc(50% - -40px) -20px;
+    }
+
+    .mb-content {
+      margin: -40px auto 0;
+      max-width: 540px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .mb-bg {
+        background-image: url(../img/xmastree/mb-bg@2x-tablet.jpg);
+      }
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  .smb-block {
+    height: 498px;
+  }
+
+  .smb-bg {
+    background-position: center center;
+    background-image: url(../img/xmastree/smb-bg-tablet.jpg);
+    background-size: cover;
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    /*second-main-banner-block-----------------------------------------[BEGIN]*/
+      .smb-bg {
+        background-image: url(../img/xmastree/smb-bg.jpg);
+      }
+    /*second-main-banner-block-------------------------------------------[END]*/
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-block {
+      height: 980px;
+
+      .mb-title {
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: .3px;
+        padding-bottom: 17px;
+      }
+
+      .mb-txt {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 22px 0 0;
+      }
+    }
+
+    .mb-bg {
+      background-image: url(../img/xmastree/mb-bg-mobile.jpg);
+      background-size: 768px 981px;
+      background-position: 50% 0;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .mb-bg {
+        background-image: url(../img/xmastree/mb-bg@2x-mobile.jpg);
+      }
+    }
+
+    .mb-content {
+      max-width: 100%;
+      margin-top: -402px;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  .approach-block {
+    height: auto;
+    padding-bottom: 45px;
+
+    .content {
+      max-width: 660;
+      padding: 0 20px;
+    }
+  }
+
+  .idea-block,
+  .input-data-block {
+    .content {
+      max-width: 560px;
+    }
+
+    .section-title-aux {
+      text-align: center;
+    }
+  }
+
+  /*idea-block---------------------------------------------------------[BEGIN]*/
+    .idea-block {
+      text-align: left;
+      min-height: inherit;
+      padding-top: 47px;
+      padding-bottom: 50px;
+
+      .descr-block {
+        width: 100%;
+        float: inherit;
+        text-align: center;
+        padding-top: 0;
+      }
+    }
+
+    .idea-bg-wrapper {
+      margin-top: 53px;
+
+      .image {
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-left: -226.5px;
+      }
+    }
+  /*idea-block-----------------------------------------------------------[END]*/
+
+  /*christmas-toys-block-----------------------------------------------[BEGIN]*/
+    .xmas-toys-block {
+      padding-top: 45px;
+      padding-bottom: 20px;
+      background-image: url(../img/xmastree/xmas-toy-bg-tablet.png);
+    }
+
+    .xmas-toys-list {
+      margin: 21px 0 0;
+    }
+  /*christmas-toys-block-------------------------------------------------[END]*/
+
+  /*input-data-block---------------------------------------------------[BEGIN]*/
+    .input-data-block {
+      padding-bottom: 50px;
+
+      .descr-block {
+        width: 100%;
+        float: inherit;
+        text-align: center;
+        padding-top: 0;
+      }
+    }
+
+    .input-data-item-2,
+    .input-data-item-3,
+    .input-data-item-4 {
+      margin: 50px 0 0;
+    }
+
+    .input-data-item-1,
+    .input-data-item-2,
+    .input-data-item-3,
+    .input-data-item-4 {
+      .image {
+        position: relative;
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    .input-data-item-1 .image {
+      margin-left: -410px;
+    }
+
+    .input-data-item-2 .image {
+      margin-left: -184px;
+    }
+
+    .input-data-item-3 .image {
+      margin-left: -550px;
+    }
+
+    .input-data-item-4 {
+      .image {
+        margin-left: -224px;
+      }
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .input-data-item-1 {
+        .image {
+          background-image: url(../img/xmastree/input-data-bg-1.png);
+        }
+      }
+
+      .input-data-item-2 {
+        .image {
+          background-image: url(../img/xmastree/input-data-bg-2.png);
+        }
+      }
+
+      .input-data-item-3 {
+        .image {
+          background-image: url(../img/xmastree/input-data-bg-3.png);
+        }
+      }
+
+      .input-data-item-4 {
+        .image {
+          background-image: url(../img/xmastree/input-data-bg-4.png);
+        }
+      }
+
+      .smb-bg {
+        background-image: url(../img/xmastree/smb-bg-tablet.jpg);
+      }
+
+      /*christmas-toys-block-------------------------------------------[BEGIN]*/
+        .xmas-toys-block {
+          background-image: url(../img/xmastree/xmas-toy-bg.png);
+          background-size: 880px 257px;
+        }
+      /*christmas-toys-block---------------------------------------------[END]*/
+    }
+  /*input-data-block-----------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 640px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-block {
+      height: 426px;
+
+      .mb-title {
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 24px;
+
+        &:after {
+          width: 45px;
+          height: 1px;
+          margin-left: -22.5px;
+        }
+      }
+
+      .mb-txt {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 13px 0 0;
+      }
+    }
+
+    .mb-bg {
+      background-image: url(../img/xmastree/mb-bg-mobile-mini.jpg);
+      background-size: 640px 440px;
+      background-position: 50% -14px;
+    }
+
+    .mb-content {
+      max-width: 520px;
+      margin-top: -167px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .mb-bg {
+        background-image: url(../img/xmastree/mb-bg-mobile-mini@2x.jpg);
+      }
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  .approach-block {
+    .thumb-img-wrapper {
+      height: auto;
+    }
+
+    .thumb-item {
+      figcaption {
+        padding: 12px 0 0;
+      }
+
+      &.prototype,
+      &.develop {
+        img {
+          width: 106px;
+        }
+      }
+
+      &.design {
+        img {
+          width: 120px;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    ul {
+      margin-top: 35px;
+    }
+
+    li {
+      margin: 0 0 35px;
+
+      &,
+      &:nth-child(3n+3),
+      &:nth-child(3n+1) {
+        text-align: center;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .idea-bg-wrapper .image {
+    background-size: 226.5px 396.5px;
+    margin-left: -113.25px;
+    height: 396.5px;
+  }
+
+  .input-data-item-1,
+  .input-data-item-2,
+  .input-data-item-3,
+  .input-data-item-4 {
+    min-height: inherit;
+  }
+
+  .input-data-item-1 .image {
+    background-size: 334px 206.5px;
+    height: 206.5px;
+    margin-left: -204px;
+  }
+
+  .input-data-item-2 .image {
+    background-size: 446.5px 238px;
+    height: 238px;
+    margin-left: -96px;
+  }
+
+  .input-data-item-3 .image {
+    background-size: 415.5px 211px;
+    height: 211px;
+    margin-left: -272px;
+  }
+
+  .input-data-item-4 .image {
+    background-size: 457px 225.5px;
+    height: 225.5px;
+    margin-left: -112px;
+  }
+
+  .smb-block {
+    height: 250px;
+  }
+
+  .xmas-toys-list {
+    left: 6.5px;
+  }
+
+  .xmas-toys-item {
+    width: 90px;
+    height: 96.5px;
+    margin: 10px 15px;
+
+    @for $i from 1 through 5 {
+      .icon-#{$i} {
+        &:before {
+          @include ps-xmastree(xmas-toy-mini-#{$i});
+        }
+      }
+    }
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    .smb-bg {
+      background-image: url(../img/xmastree/smb-bg-mobile.jpg);
+    }
+
+    /*christmas-toys-block---------------------------------------------[BEGIN]*/
+      .xmas-toys-block {
+        background-image: url(../img/xmastree/xmas-toy-bg-tablet.png);
+      }
+    /*christmas-toys-block-----------------------------------------------[END]*/
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .approach-block {
+    .thumb-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    ul {
+      margin-top: 30px;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+    li {
+      &.prototype,
+      &.design,
+      &.develop {
+        width: 100%;
+        margin: 0;
+
+        figure {
+          margin: 0 auto 36px;
+        }
+
+        figcaption {
+          padding-top: 9px;
+        }
+      }
+
+      &.prototype {
+        figure {
+          width: 106px;
+        }
+      }
+
+      &.develop {
+        figure {
+          width: 106px;
+        }
+      }
+
+      &.design {
+        figure {
+          width: 120px;
+        }
+
+        img {
+          position: relative;
+          left: 7px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-content {
+      padding: 0 20px;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="71px" height="66px" viewBox="0 0 71 66" enable-background="new 0 0 71 66" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#616160" d="M45,8h8c0.552,0,1,0.448,1,1v1H44V9C44,8.448,44.447,8,45,8z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#616160" d="M19,8h8c0.553,0,1,0.448,1,1v1H18V9C18,8.448,18.447,8,19,8z"/>
+<g>
+	<path fill="#616160" d="M44,6c1.103,0,2,0.897,2,2v2H26V8c0-1.103,0.897-2,2-2H44 M44,4H28c-2.209,0-4,1.791-4,4v4h24V8
+		C48,5.791,46.209,4,44,4L44,4z"/>
+</g>
+<g>
+	<path fill="#616160" d="M44,2c3.309,0,6,2.691,6,6v2H22V8c0-3.309,2.691-6,6-6H44 M44,0H28c-4.418,0-8,3.582-8,8v4h32V8
+		C52,3.582,48.418,0,44,0L44,0z"/>
+</g>
+<g>
+	<path fill="#616160" d="M37,36v2h-2v-2H37 M39,34h-6v4c0,1.105,0.896,2,2,2h2c1.104,0,2-0.895,2-2V34L39,34z"/>
+</g>
+<g>
+	<path fill="#616160" d="M39,28v6h-6v-6H39 M39,26h-6c-1.104,0-2,0.896-2,2v6c0,1.105,0.896,2,2,2h6c1.104,0,2-0.895,2-2v-6
+		C41,26.896,40.104,26,39,26L39,26z"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M4,10h63c2.209,0,4,1.791,4,4v14c0,2.209-1.791,4-4,4H4
+	c-2.209,0-4-1.791-4-4V14C0,11.791,1.791,10,4,10z"/>
+<g>
+	<path fill="#616160" d="M67,12c1.103,0,2,0.897,2,2v48c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2V14c0-1.103,0.897-2,2-2H67
+		 M67,10H4c-2.209,0-4,1.791-4,4v48c0,2.209,1.791,4,4,4h63c2.209,0,4-1.791,4-4V14C71,11.791,69.209,10,67,10L67,10z"/>
+</g>
+<path fill="#616160" d="M69,57v1c0,1.103-0.897,2-2,2H4c-1.103,0-2-0.897-2-2v-1H0v1c0,2.209,1.791,4,4,4h63c2.209,0,4-1.791,4-4v-1
+	H69z"/>
+<g>
+	<path fill="#616160" d="M69,27v1c0,1.103-0.897,2-2,2H40v2h27c2.209,0,4-1.791,4-4v-1H69z"/>
+	<path fill="#616160" d="M32,30H4c-1.103,0-2-0.897-2-2v-1H0v1c0,2.209,1.791,4,4,4h28V30z"/>
+</g>
+</svg>

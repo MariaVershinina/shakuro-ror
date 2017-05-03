@@ -1,0 +1,944 @@
+p {
+  color: $gray-l3;
+}
+
+/*main-banner-block----------------------------------------------------[BEGIN]*/
+  .mb-block {
+    background-color: #01060d;
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    position: relative;
+    @include transition(height .3s ease-in-out);
+    font-family: "Montserrat-Light", sans-serif;
+
+    .hmb-title {
+      display: inline-block;
+      position: relative;
+      width: 324px;
+      height: 198px;
+      color: transparent;
+      margin: 0 auto;
+
+      &:after {
+        content: '';
+        background: rgba(255, 255, 255, .42);
+        width: 90px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -45px;
+      }
+    }
+
+    .hmb-txt {
+      display: inline-block;
+      width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      color: #fefefe;
+      padding: 26px 0 32px;
+    }
+
+    .btn-block {}
+    .btn {
+      width: auto;
+      min-width: 200px;
+      @extend .aux-btn;
+      @extend .orange-burnt-btn;
+    }
+  }
+
+  .mb-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/society/mb-bg.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    @include transition(opacity .3 linear);
+    opacity: .25;
+  }
+
+  .mb-wrapper {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mb-vert-centr {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .mb-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 980px;
+    margin: -52px auto 0;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+/*main-banner-block------------------------------------------------------[END]*/
+
+/*our-approach-block---------------------------------------------------[BEGIN]*/
+  .approach-block {
+    padding-bottom: 90px;
+    background-color: $gray-l6;
+    border-bottom: 1px solid $gray-l5;
+    @extend .title-brdr;
+    @extend .three-column-block;
+    @extend .approach-light-theme;
+
+    ul {
+      width: 100%;
+      padding: 0;
+      margin-top: 56px;
+      @include ib;
+      @include clearfix();
+    }
+
+    li {
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    figcaption {
+      width: 100%;
+      padding: 28px 0 0;
+    }
+
+    .thumb-item {
+      @include ib;
+      @include clearfix();
+      vertical-align: top;
+    }
+
+    .thumb-img-wrapper {
+      width: 100%;
+      height: 120px;
+      text-align: center;
+    }
+
+    .prototype {
+      img {
+        width: 135px;
+      }
+    }
+
+    .design {
+      img {
+        width: 144px;
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .develop {
+      img {
+        width: 126px;
+      }
+    }
+  }
+/*our-approach-block-----------------------------------------------------[END]*/
+
+/*complex-list-block---------------------------------------------------[BEGIN]*/
+  .complex-list-block {
+    @extend .base-block;
+    background: #fff;
+    border-bottom: 1px solid $gray-l5;
+    padding: 100px 0 40px;
+    overflow: hidden;
+
+    p {
+      margin-top: 14px;
+    }
+
+    .content {
+      height: 836px;
+    }
+
+    .retina-display,
+    .default-display {
+      position: absolute;
+      width: 1265px;
+      height: 850px;
+      top: -3px;
+      left: 413px;
+      z-index: 2;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .default-display {
+      display: block;
+      background-image: url(../img/society/b35.jpg);
+    }
+
+    .retina-display {
+      display: none;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2 / 1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 2dppx) {
+      .default-display {
+        display: none;
+      }
+
+      .retina-display {
+        display: block;
+        background-image: url(../img/society/b35@2x.jpg);
+        background-size: 1265px 850px;
+      }
+    }
+
+    ul {
+      width: 386px;
+      @include ib;
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        content: "";
+        width: 386px;
+        @include ib;
+        overflow: hidden;
+        visibility: hidden;
+        z-index: 1;
+      }
+
+      + h2 {
+        text-align: center;
+      }
+    }
+
+    li {
+      width: 100%;
+      padding-top: 48px;
+      @include ib;
+      float: left;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    img {
+      position: relative;
+      @include ib;
+
+      &.default-display {
+        display: inline-block;
+      }
+
+      &.retina-display {
+        display: none;
+      }
+    }
+
+    figure {
+      @include clearfix();
+    }
+
+    .thumb-img {
+      width: 132px;
+      float: left;
+
+      img {
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+      }
+    }
+
+    figcaption {
+      width: calc(100% - 132px);
+      float: left;
+      position: relative;
+      @include ib;
+      vertical-align: top;
+      padding-top: 1px;
+    }
+
+    h2 {
+      letter-spacing: .5px;
+      font-family: "Montserrat-Regular", sans-serif;
+      font-size: 17px;
+      text-transform: none;
+      font-weight: 400;
+    }
+
+    .retina-ready {
+      margin: -18px 0 0;
+    }
+
+    .responsive-layout {
+      margin: -14px 0 0;
+    }
+
+    .clear-grid {
+      margin: -15px 0 0;
+    }
+
+    .saves-time {
+      margin: -7px 0 0 3px;
+    }
+
+    .stay-know {
+      margin: -7px 0 0;
+    }
+  }
+/*complex-list-block-----------------------------------------------------[END]*/
+
+/*second-main-banner-block---------------------------------------------[BEGIN]*/
+  .smb-block,
+  .smb-2-block {
+    width: 100%;
+    position: relative;
+    @include transition(height .3s ease-in-out);
+  }
+
+  .smb-block {
+    height: 920px;
+  }
+
+  .smb-2-block {
+    height: 820px;
+  }
+
+  .smb-bg,
+  .smb-2-bg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .smb-bg {
+    background-image: url(../img/society/smb-bg.jpg);
+  }
+
+  .smb-2-bg {
+    background-image: url(../img/society/smb-bg-2.jpg);
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2 / 1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 2dppx) {
+    .smb-bg {
+      background-image: url(../img/society/smb-bg@2x.jpg);
+    }
+
+    .smb-2-bg {
+      background-image: url(../img/society/smb-bg-2@2x.jpg);
+    }
+  }
+/*second-main-banner-block-----------------------------------------------[END]*/
+
+/*info-aux-block-------------------------------------------------------[BEGIN]*/
+  .info-aux-block {
+    padding: 98px 0 78px;
+    background-color: $gray-l6;
+    border-top: 1px solid $gray-l5;
+    border-bottom: 1px solid $gray-l5;
+    overflow: hidden;
+
+    .descr-block {
+      position: relative;
+      width: 440px;
+      padding-top: 197px;
+      margin-right: 28px;
+      z-index: 2;
+    }
+
+    .descr-align-left {
+      float: left;
+    }
+
+    .image {
+      background-repeat: no-repeat;
+      background-position: top left;
+      top: 0;
+      position: absolute;
+      z-index: 1;
+      width: 1119px;
+      height: 820px;
+      left: 487px;
+      background-image: url(../img/society/info-aux-bg.png);
+
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2 / 1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/society/info-aux-bg@2x.png);
+        background-size: 1119px 820px;
+      }
+    }
+  }
+
+  .info-aux-item {
+    height: 820px;
+    @include clearfix();
+  }
+/*info-aux-block---------------------------------------------------------[END]*/
+
+@media screen and (min-width: 1921px) {
+  .smb-bg,
+  .smb-2-bg {
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*second-main-banner-block-------------------------------------------[BEGIN]*/
+    .smb-block {
+      height: 491px;
+    }
+
+    .smb-2-block {
+      height: 437px;
+    }
+
+    .smb-bg {
+      background-image: url(../img/society/smb-bg-tablet.jpg);
+    }
+
+    .smb-2-bg {
+      background-image: url(../img/society/smb-bg-2-tablet.jpg);
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      .smb-bg,
+      .smb-2-bg {
+        background-size: cover;
+      }
+
+      .smb-bg {
+        background-image: url(../img/society/smb-bg@2x-tablet.jpg);
+      }
+
+      .smb-2-bg {
+        background-image: url(../img/society/smb-bg-2@2x-tablet.jpg);
+      }
+    }
+  /*second-main-banner-block---------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 768px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-block {
+      height: 820px !important;
+      min-height: 820px !important;
+    }
+
+    .mb-bg {
+      background-position: 50% 0;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  /*our-approach-block-------------------------------------------------[BEGIN]*/
+    .approach-block {
+      padding-bottom: 45px;
+
+      .content {
+        max-width: 660;
+        padding: 0 20px;
+      }
+    }
+  /*our-approach-block---------------------------------------------------[END]*/
+
+  /*complex-list-block-------------------------------------------------[BEGIN]*/
+    .complex-list-block {
+      padding: 25px 0 0;
+
+      .content {
+        height: inherit;
+        text-align: center;
+      }
+
+      .retina-display,
+      .default-display {
+        position: relative;
+        top: 0;
+        left: -68px;
+      }
+
+      .thumb-img,
+      figcaption {
+        width: 100%;
+        float: inherit;
+      }
+
+      .thumb-img {
+        height: 97px;
+        margin-bottom: 14px;
+      }
+
+      figcaption {
+        max-width: 280px;
+      }
+
+      ul {
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto 28px;
+        text-align: center;
+        text-align-last: center;
+        vertical-align: top;
+      }
+
+      li {
+        width: 290px;
+        float: inherit;
+        padding: 0 20px 34px;
+        text-align: center;
+        text-align-last: center;
+        vertical-align: top;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+
+      .retina-ready,
+      .responsive-layout,
+      .clear-grid,
+      .saves-time,
+      .stay-know {
+        margin: 0;
+      }
+
+      .retina-ready {
+        margin: 13px 0 0;
+      }
+
+      .responsive-layout {
+        margin: 11px 0 0;
+      }
+
+      .clear-grid {
+        margin: 13px 0 0;
+      }
+
+      .saves-time {
+        margin: 0;
+      }
+
+      .stay-know {
+        margin: 4px 0 0;
+      }
+    }
+  /*complex-list-block---------------------------------------------------[END]*/
+
+  /*info-aux-block-----------------------------------------------------[BEGIN]*/
+    .info-aux-block {
+      padding-top: 47px;
+      padding-bottom: 40px;
+
+      .descr-block {
+        width: 100%;
+        max-width: 560px;
+        text-align: center;
+        padding: 0 20px;
+        margin: 0 auto;
+      }
+
+      .descr-align-left {
+        float: inherit;
+      }
+
+      .image {
+        position: relative;
+        left: 11px;
+        margin: 45px 0 0;
+      }
+    }
+
+    .info-aux-item {
+      height: inherit;
+    }
+  /*info-aux-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 640px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .mb-block {
+      height: 436px !important;
+      min-height: 436px !important;
+
+      .hmb-title {
+        width: 320px;
+        height: 183px;
+
+        &:after {
+          background: rgba(255, 255, 255, 0.42);
+          width: 45px;
+          height: 1px;
+          margin-left: -22.5px;
+        }
+      }
+
+      .hmb-txt {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 18px 20px 20px;
+      }
+    }
+
+    .mb-bg {
+      background-image: url(../img/society/mb-bg-tablet.jpg);
+    }
+
+    .mb-content {
+      max-width: 530px;
+      padding: 0;
+      margin-top: -52px;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  /*our-approach-block-------------------------------------------------[BEGIN]*/
+    .approach-block {
+      .thumb-img-wrapper {
+        height: auto;
+      }
+
+      .thumb-item {
+        figcaption {
+          padding: 12px 0 0;
+        }
+
+        &.prototype,
+        &.develop {
+          img {
+            width: 106px;
+          }
+        }
+
+        &.design {
+          img {
+            width: 120px;
+            margin-left: 15px;
+          }
+        }
+      }
+
+      ul {
+        margin-top: 35px;
+      }
+
+      li {
+        margin: 0 0 35px;
+
+        &,
+        &:nth-child(3n+3),
+        &:nth-child(3n+1) {
+          text-align: center;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  /*our-approach-block---------------------------------------------------[END]*/
+
+  /*complex-list-block-------------------------------------------------[BEGIN]*/
+    .complex-list-block {
+      padding-top: 50px;
+      padding-bottom: 10px;
+
+      .retina-display,
+      .default-display {
+        background-image: url(../img/society/b35-tablet.jpg);
+        width: 604px;
+        height: 406px;
+        left: 50%;
+        margin-left: -302px;
+      }
+
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2 / 1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 2dppx) {
+        .retina-display {
+          background-image: url(../img/society/b35.jpg);
+          background-size: 604px 406px;
+        }
+      }
+
+      li {
+        width: 280px;
+
+        &:first-child {
+
+          .thumb-img {
+            height: 67px;
+          }
+        }
+
+        &:nth-child(2) {
+          .thumb-img {
+            height: 71px;
+          }
+        }
+
+        &:nth-child(3) {
+          .thumb-img {
+            height: 68px;
+          }
+        }
+
+        &:nth-child(4) {
+          .thumb-img {
+            height: 97px;
+          }
+        }
+
+        &:nth-child(5) {
+          .thumb-img {
+            height: 86px;
+          }
+        }
+      }
+
+      .retina-ready,
+      .responsive-layout,
+      .clear-grid,
+      .saves-time,
+      .stay-know {
+        margin: 0;
+      }
+
+      .retina-ready {
+        top: -17px;
+      }
+
+      .responsive-layout {
+        top: -14px;
+      }
+
+      .clear-grid {
+        top: -16px;
+      }
+
+      .saves-time {
+        top: -2px;
+      }
+
+      .stay-know {
+        top: -7px;
+      }
+    }
+  /*complex-list-block---------------------------------------------------[END]*/
+
+  /*second-main-banner-block-------------------------------------------[BEGIN]*/
+    .smb-block {
+      height: 307px;
+    }
+
+    .smb-2-block {
+      height: 328px;
+    }
+
+    .smb-bg {
+      background-image: url(../img/society/smb-bg-mobile.jpg);
+    }
+
+    .smb-2-bg {
+      background-image: url(../img/society/smb-bg-2-mobile.jpg);
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2 / 1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 2dppx) {
+      .smb-bg {
+        background-image: url(../img/society/smb-bg-mobile.jpg);
+      }
+
+      .smb-2-bg {
+        background-image: url(../img/society/smb-bg-2-mobile.jpg);
+      }
+    }
+  /*second-main-banner-block---------------------------------------------[END]*/
+
+  /*info-aux-block-----------------------------------------------------[BEGIN]*/
+    .info-aux-block {
+      .image {
+        background-image: url(../img/society/info-aux-bg-mobile.png);
+        height: 410px;
+        left: -12px;
+
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2 / 1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 2dppx) {
+          background-image: url(../img/society/info-aux-bg.png);
+          background-size: 560px 410px;
+        }
+      }
+    }
+  /*info-aux-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 571px) {
+  /*our-approach-block-------------------------------------------------[BEGIN]*/
+    .approach-block {
+      ul {
+        margin-top: 30px;
+
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+        }
+      }
+
+      li {
+        &.prototype,
+        &.design,
+        &.develop {
+          width: 100%;
+          margin: 0;
+
+          figure {
+            margin: 0 auto 36px;
+          }
+
+          figcaption {
+            padding-top: 9px;
+          }
+        }
+
+        &.prototype {
+          figure {
+            width: 106px;
+          }
+        }
+
+        &.develop {
+          figure {
+            width: 106px;
+          }
+        }
+
+        &.design {
+          figure {
+            width: 120px;
+          }
+
+          img {
+            position: relative;
+            left: 7px;
+          }
+        }
+      }
+    }
+  /*our-approach-block---------------------------------------------------[END]*/
+
+  /*complex-list-block-------------------------------------------------[BEGIN]*/
+    .complex-list-block {
+      padding-bottom: 20px;
+
+      .retina-display,
+      .default-display {
+        width: 480px;
+        height: 323px;
+        left: 50%;
+        margin-left: -240px;
+        background-size: 480px 323px;
+      }
+
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2 / 1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 2dppx) {
+        .retina-display {
+          background-image: url(../img/society/b35-tablet.jpg);
+          background-size: 480px 323px;
+        }
+      }
+    }
+  /*complex-list-block---------------------------------------------------[END]*/
+
+  /*second-main-banner-block-------------------------------------------[BEGIN]*/
+    .smb-block {
+      height: 274px;
+    }
+  /*second-main-banner-block---------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 480px) {
+  /*complex-list-block-------------------------------------------------[BEGIN]*/
+    .complex-list-block {
+      padding-bottom: 28px;
+
+      .retina-display,
+      .default-display {
+        width: 320px;
+        height: 215px;
+        margin-left: -159px;
+        background-size: 320px 215px;
+      }
+
+      @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2 / 1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 2dppx) {
+        .retina-display {
+          background-size: 320px 215px;
+        }
+      }
+    }
+  /*complex-list-block---------------------------------------------------[END]*/
+}

@@ -1,0 +1,184 @@
+.error-404 {
+  width: 100%;
+  height: 100%;
+  min-height: 874px;
+  background: #fff;
+  font-stretch: normal;
+  text-align: left;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  padding-top: 62px;
+
+  .header {
+    .site-logo {
+      color: #fff;
+      @include transition(opacity .2s linear);
+
+      &:before {
+        @include ps(logo-white-aux);
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .half {
+    width: 100%;
+    height: 50%;
+  }
+
+  .header {
+    background: transparent;
+    border: none;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .content,
+  .row {
+    height: 100%;
+  }
+
+  .row > div {
+    width: 600px;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 100px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 46px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .go-home-btn-wrapper {
+    margin-top: 87px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+  }
+
+  .go-home-btn {
+    width: 235px;
+    @extend .aux-btn;
+    @extend .yellow-btn;
+  }
+}
+
+.error-404-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: url(../img/404/404.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.error-404-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .error-404-bg {
+    background-image: url(../img/404/404-tablet.jpg);
+  }
+
+  .error-404 {
+    .row > div {
+      padding-top: 61px;
+      padding-bottom: 61px;
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .error-404-bg {
+    background-image: url(../img/404/404-mobile.jpg);
+  }
+
+  .error-404 {
+    .row > div {
+      padding-top: 64px;
+      padding-bottom: 32px;
+      width: 100%;
+    }
+
+    .go-home-btn-wrapper {
+      margin-top: 48px;
+    }
+  }
+}
+
+@media screen and (min-width: 569px) and (max-width: 768px) {
+  .error-404 {
+    min-height: 680px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .error-404 {
+    min-height: 568px;
+
+    h2 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media only screen
+and (min-device-width : 0)
+and (max-device-width : 768px)
+and (orientation : landscape) {
+  .error-404 {
+    min-height: 368px;
+
+    .row > div {
+      padding-top: 0;
+    }
+
+    .go-home-btn-wrapper {
+      margin-top: 28px;
+    }
+  }
+
+  .error-404-bg {
+    background-image: url(../img/404/404-tablet-landscape.jpg);
+  }
+}

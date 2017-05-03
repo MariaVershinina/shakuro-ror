@@ -1,0 +1,567 @@
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  padding-bottom: 60px;
+  font-family: "Montserrat-Light";
+  @include ib;
+  position: relative;
+}
+
+h5 {
+  text-align: center;
+}
+
+.slogan-block,
+.workflow-block {
+  .content {
+    max-width: 920px;
+  }
+}
+
+/*main-banner-block----------------------------------------------------[BEGIN]*/
+  .hmb-block {
+    background-color: #01060d;
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    position: relative;
+    @include transition(height .3s ease-in-out);
+
+    h2 {
+      font-size: 72px;
+      line-height: 90px;
+      letter-spacing: -1.8px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Montserrat-Regular";
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      letter-spacing: -.3px;
+      color: #fff;
+      padding: 16px 0 38px;
+    }
+
+    .btn {
+      width: auto;
+      min-width: 275px;
+      @extend .aux-btn;
+      @extend .yellow-btn;
+    }
+  }
+
+  .hmb-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../img/about/mb-bg.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    @include transition(opacity .3 linear);
+    opacity: .25;
+  }
+
+  .hmb-wrapper {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hmb-vert-centr {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .hmb-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+/*main-banner-block------------------------------------------------------[END]*/
+
+/*workflow-block-------------------------------------------------------[BEGIN]*/
+  .workflow-block {
+    display: block;
+    background: #fff;
+    padding-bottom: 0;
+    @extend .about-block;
+    padding-top: 302px;
+    border-bottom: none;
+    text-align: center;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 151px;
+      height: 151px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      top: 100px;
+      left: 50%;
+      margin-left: -75.5px;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 66px;
+      height: 64px;
+      background-color: transparent;
+      background-image: url(../img/base/logo-feedback.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 66px 64px;
+      top: 145px;
+      left: 50%;
+      margin-left: -31px;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      padding-bottom: 60px;
+      font-family: "Montserrat-Light";
+      display: -moz-inline-stack;
+      display: inline-block;
+      position: relative;
+    }
+
+    h1,
+    h3 {
+      max-width: 680px;
+      width: 100%;
+      padding: 0 20px 28px;
+      margin: 20px 0 0;
+    }
+
+    .shakuro-logo {
+      &:before {
+        content: '';
+      }
+    }
+
+    .image {
+      background: url(../img/about/workflow.jpg) no-repeat top center;
+      background-size: cover;
+      width: 100%;
+      height: 469px;
+      margin-top: 96px;
+      @include transition(height .3s ease-in-out);
+    }
+  }
+/*workflow-block---------------------------------------------------------[END]*/
+
+/*contacts-block-------------------------------------------------------[BEGIN]*/
+  .contacts-block {
+    @extend .main-three-column-block;
+    padding-bottom: 56px;
+
+    .content {
+      max-width: 960px;
+    }
+
+    ul {
+      margin: 72px 0 0;
+    }
+
+    img {
+      width: 97px;
+      height: 78px;
+      display: inline-block !important;
+    }
+
+    h4,
+    a {
+      font-family: "Montserrat-Light", sans-serif;
+      color: #000;
+    }
+
+    h4 {
+      padding: 0 0 8px;
+    }
+
+    p {
+      line-height: 22px;
+
+      + p {
+        margin: 2px 0 0;
+      }
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    figcaption {
+      padding: 12px 0 0;
+    }
+  }
+/*contacts-block---------------------------------------------------------[END]*/
+
+/*slogan-block---------------------------------------------------------[BEGIN]*/
+  .slogan-block {
+    @extend .base-block;
+    padding: 89px 0 0;
+    text-align: center;
+
+    .content {
+      max-width: 880px;
+    }
+
+    blockquote {
+      font-size: 32px;
+      line-height: 45px;
+      letter-spacing: -.5px;
+      padding: 0 0 24px;
+    }
+
+    figcaption {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .image {
+      background: url(../img/about/slogan.jpg) no-repeat top center;
+      background-size: cover;
+      width: 100%;
+      height: 428px;
+      margin-top: 99px;
+      @include transition(height .3s ease-in-out);
+    }
+  }
+/*slogan-block-----------------------------------------------------------[END]*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .social {
+    .dribble a {
+      padding-left: 25px;
+
+      &:before {
+        @include ps(dribble-icon-small-tablet);
+        left: -7px;
+      }
+    }
+
+    .behance a {
+      padding-left: 37px;
+
+      &:before {
+        @include ps(behance-icon-small-tablet);
+        left: 6px;
+      }
+    }
+
+    .facebook a:before {
+      @include ps(facebook-icon-small-tablet);
+    }
+
+    .twitter a {
+      padding-left: 30px;
+
+      &:before {
+        @include ps(twitter-icon-small-tablet);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .social {
+    text-align: center;
+    text-align-last: center;
+    margin-top: 17px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 254px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    li {
+      margin: 36px 55px 0 0;
+    }
+
+    .behance,
+    .twitter {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .dribble {
+      margin-top: 0;
+    }
+
+    .twitter a:before {
+      left: -8px;
+    }
+
+    .dribble a {
+      padding-left: 32px;
+
+      &:before {
+        @include ps(dribble-icon-small-mobile);
+      }
+    }
+
+    .behance a {
+      padding-left: 33px;
+
+      &:before {
+        @include ps(behance-icon-small-mobile);
+      }
+    }
+
+    .facebook a {
+      padding-left: 25px;
+
+      &:before {
+        @include ps(facebook-icon-small-mobile);
+        left: 0;
+      }
+    }
+
+    .twitter a {
+      padding-left: 26px;
+
+      &:before {
+        @include ps(twitter-icon-small-mobile);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  /*workflow-block-----------------------------------------------------[BEGIN]*/
+    .workflow-block {
+      .image {
+        background-image: url(../img/about/workflow-tablet.jpg);
+        height: 313px;
+      }
+    }
+  /*workflow-block-------------------------------------------------------[END]*/
+
+  /*slogan-block-------------------------------------------------------[BEGIN]*/
+    .slogan-block {
+      .image {
+        background-image: url(../img/about/slogan-tablet.jpg);
+        height: 285px;
+      }
+    }
+  /*slogan-block---------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 13px;
+  }
+
+  .slogan-block,
+  .workflow-block {
+    .content {
+      max-width: 680px;
+      padding: 0 40px;
+    }
+  }
+
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .hmb-block {
+      height: 536px !important;
+      min-height: 536px !important;
+
+      h2 {
+        font-size: 27px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        font-family: "Montserrat-Light";
+      }
+
+      p {
+        font-size: 14px;
+        padding: 16px 20px 27px;
+      }
+    }
+
+    .hmb-bg {
+      background-image: url(../img/about/mb-bg-mobile.jpg);
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  /*workflow-block-----------------------------------------------------[BEGIN]*/
+    .workflow-block {
+      padding-top: 150px;
+
+      &:before {
+        width: 75.5px;
+        height: 75.5px;
+        top: 50px;
+        margin-left: -37.75px;
+      }
+
+      &:after {
+        width: 33px;
+        height: 32px;
+        background-size: 33px 32px;
+        top: 72.5px;
+        margin-left: -16.5px;
+      }
+
+      h1,
+      h3 {
+        max-width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        padding: 0 0 20px;
+        margin: 12px 0 0;
+      }
+
+      .image {
+        background-image: url(../img/about/workflow-mobile.jpg);
+        height: 188px;
+        margin-top: 43px;
+      }
+    }
+  /*workflow-block-------------------------------------------------------[END]*/
+
+  /*slogan-block-------------------------------------------------------[BEGIN]*/
+    .slogan-block {
+      padding: 37px 0 0;
+
+      blockquote {
+        font-size: 25px;
+        line-height: 34px;
+        padding: 0 0 16px;
+      }
+
+      .image {
+        background-image: url(../img/about/slogan-mobile.jpg);
+        height: 171px;
+        margin-top: 45px;
+      }
+    }
+  /*slogan-block---------------------------------------------------------[END]*/
+
+  /*contacts-block-----------------------------------------------------[BEGIN]*/
+    .contacts-block {
+      ul {
+        max-width: 703px;
+        padding: 0 30px;
+        margin: 72px auto 0;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .san-francisco,
+      .montpellier,
+      .dubai {
+        margin: 0 auto;
+      }
+    }
+  /*contacts-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 640px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .hmb-block {
+      height: 387px !important;
+      min-height: 387px !important;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+
+  /*contacts-block-----------------------------------------------------[BEGIN]*/
+    .contacts-block {
+      ul {
+        padding: 0;
+      }
+
+      li {
+        width: 100%;
+        padding: 0 0 38px;
+
+        &,
+        &:nth-child(2n+1),
+        &:nth-child(2n+2) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &:last-child {
+          padding: 0;
+        }
+      }
+
+      figure {
+        width: 100%;
+        max-width: 360px;
+        padding: 0 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .san-francisco,
+      .montpellier,
+      .dubai {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  /*contacts-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 480px) {
+  .slogan-block,
+  .workflow-block {
+    .content {
+      padding: 0 20px;
+    }
+  }
+
+  /*workflow-block-----------------------------------------------------[BEGIN]*/
+    .workflow-block {
+      .image {
+        height: 134px;
+      }
+    }
+  /*workflow-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 420px) {
+  /*main-banner-block--------------------------------------------------[BEGIN]*/
+    .hmb-content {
+      padding: 0 20px;
+    }
+  /*main-banner-block----------------------------------------------------[END]*/
+}

@@ -1,0 +1,784 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="Responsive web design is not a feature these days, bur rather a must. So, we made My Movies compatible with any devices: from mobile to TV ones.">
+  <meta content="width = device-width, initial-scale = 1, maximum-scale = 1" name="viewport">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="web">
+  <meta property="og:title" content="My Movies">
+  <meta property="og:description" content="Responsive web design is not a feature these days, bur rather a must. So, we made My Movies compatible with any devices: from mobile to TV ones.">
+  <meta property="og:image" content="https://shakuro.com/img/base/logotype.png">
+  <meta property="og:url" content="https://shakuro.com/">
+  <meta property="og:site_name" content="iOS and Android Web &amp; Mobile Apps Development company | Shakuro">
+  <title>iOS and Android Web &amp; Mobile Apps Development company | Shakuro</title>
+  <link type="text/css" href="css/style_mmv.css" rel="stylesheet" media="screen">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Shakuro">
+  <meta name="application-name" content="Shakuro">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!--[if lt IE 7]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 8]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PC8WLX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PC8WLX');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for http://shakuro.com -->
+  <script>
+    (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:288435,hjsv:5};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <div class="before-loading"></div>
+  <header class="header">
+    <div class="content">
+      <div class="logo">
+        <a class="site-logo" href="index.html" target="_self">shakuro</a>
+      </div>
+      <nav>
+        <ul>
+          <li class="get-in-touch">
+            <a class="scroll-to-form nav-btn" href="#">Request a&nbsp;quote</a>
+          </li>
+          <li>
+            <a href="/blog" class="nav-link" title="Blog">Blog</a>
+          </li>
+          <li>
+            <a href="showcase.html" class="nav-link">showcase</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">about</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="close"></div>
+      </div>
+    </div>
+  </header>
+  <div class="mb-block first-slide" style="height: 100%;">
+    <div class="mb-bg"></div>
+    <div class="mb-wrapper">
+      <div class="mb-vert-centr">
+        <div class="mb-content">
+          <div class="mb-title">My Movies</div>
+          <h1 class="mb-txt">Keep track of&nbsp;all of&nbsp;your movies with the My&nbsp;Movies app.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="about-block">
+      <div class="content">
+        <div class="section-title">About</div>
+        <p>Store and keep track of&nbsp;all your movies with the My&nbsp;Movies app. Collect, filter and search movies by&nbsp;your favorite genres and actors, making finding the perfect movie just a&nbsp;tap away. Forget searching through endless folders of&nbsp;titles, store your whole movie collection in&nbsp;one place to&nbsp;make browsing a&nbsp;breeze.</p>
+        <p>With our My&nbsp;Movies device sync you can enjoy your movie collection anywhere in&nbsp;the house. Whether on&nbsp;your laptop, mobile or&nbsp;even your Smart TV, My&nbsp;Movies helps you find that perfect movie for any occasion.</p>
+      </div>
+    </section>
+    <section class="approach-block">
+      <div class="content">
+        <div class="text">
+          <span class="section-title">Our Approach</span>
+          <p>We&rsquo;ve worked on&nbsp;My&nbsp;Movies right from the prototyping stage, to&nbsp;design and development. Having this full control meant we&nbsp;could easily iterate whenever requirements or&nbsp;new ideas were raised.</p>
+        </div>
+        <ul>
+          <li>
+            <figure class="thumb-item prototype">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/001_Prototype_icon_white.svg" alt="Prototype">
+              </div>
+              <figcaption>
+                <span class="thumb-title">Prototype</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="thumb-item design">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/002_Design_icon_white.svg" alt="Design">
+              </div>
+              <figcaption>
+                <span class="thumb-title">Design</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="thumb-item develop">
+              <div class="thumb-img-wrapper">
+                <img src="img/svg/003_Development_icon_white.svg" alt="Development">
+              </div>
+              <figcaption>
+                <span class="thumb-title">Development</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="b35">
+      <div class="content">
+        <ul>
+          <li>
+            <figure>
+              <div class="thumb-img">
+                <img class="retina-ready" src="img/svg/015_Retina_Ready.svg" alt="Retina Ready">
+              </div>
+              <figcaption>
+                <h5>Corporate Identity</h5>
+                <p>Superior use of&nbsp;logos, icons and color schemes have helped produce an&nbsp;instantly recognisable and memorable identity for My&nbsp;Movies.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <div class="thumb-img">
+                <img class="clear-user-grid" src="img/svg/008_UI_UX_standalone_icon_simple.svg" alt="Clear user grid">
+              </div>
+              <figcaption>
+                <h5>Cross Platform</h5>
+                <p>Designed and developed to&nbsp;work beautifully regardless of&nbsp;the device. Using native development on&nbsp;iOS, Android and Windows Phone as&nbsp;well Dune TV, Apple TV&nbsp;and other smart devices to&nbsp;create only the best experience.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <div class="thumb-img">
+                <img class="responsive-layout" src="img/svg/016_Responsive Layout.svg" alt="Responsive layout">
+              </div>
+              <figcaption>
+                <h5>Optimization</h5>
+                <p>Built with best practices in&nbsp;optimization has resulted in&nbsp;an&nbsp;application that runs without any hiccups. Seamless transitions over all screens making the app a&nbsp;joy to&nbsp;use.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <div class="thumb-img">
+                <img class="saves-time" src="img/svg/009_Identity_icon.svg" alt="Saves time">
+              </div>
+              <figcaption>
+                <h5>All In One</h5>
+                <p>My&nbsp;Movies was solely built by&nbsp;us, from prototyping all the way to&nbsp;testing and being ready for release. Once done, My&nbsp;Movies was released without any obligations or&nbsp;limitations.</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <i class="default-display"></i>
+        <i class="retina-display"></i>
+      </div>
+    </section>
+    <section class="b36">
+      <div class="default-display">
+        <span class="section-title">Prototyping</span>
+      </div>
+      <div class="retina-display">
+        <span class="section-title">Prototyping</span>
+      </div>
+    </section>
+    <section class="b37">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <h2 class="section-title-aux">My&nbsp;Movies for iPhone and iPad</h2>
+            <p>My&nbsp;Movies is&nbsp;available from the Apple App Store. Developed natively to&nbsp;fulfil the power of&nbsp;Apple&rsquo;s iOS platform, bringing a&nbsp;highly performant and stunningly designed app on&nbsp;both iPhone and iPad.</p>
+            <p>Using your iOS account, our iPhone and iPad apps will synchronize up&nbsp;with your desktop Mac application or&nbsp;Apple&nbsp;TV, remembering all your preferences so&nbsp;you don&rsquo;t have&nbsp;to. Remotely managing your movie collection made easy.</p>
+            <a href="https://itunes.apple.com/de/app/my-movies-pro-movie-tv-collection/id917555054?l=en&mt=8"></a>
+          </div>
+          <i class="default-display"></i>
+          <i class="retina-display"></i>
+        </div>
+      </div>
+    </section>
+    <section class="b39">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <h2 class="section-title-aux">My&nbsp;Movies for Android</h2>
+            <p>Our Android app has been built using the best native development practices resulting in&nbsp;a&nbsp;flawlessly smooth user experience. Being developed natively has allowed My&nbsp;Movies make use of&nbsp;Android&rsquo;s diverse native functionality while being accessible on&nbsp;a&nbsp;massive range of&nbsp;devices.</p>
+            <a href="https://play.google.com/store/apps/details?id=dk.mymovies.mymovies2forandroidfree"></a>
+          </div>
+          <i class="default-display"></i>
+          <i class="retina-display"></i>
+        </div>
+      </div>
+    </section>
+    <section class="b41">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <h2 class="section-title-aux">My&nbsp;Movies for Mac</h2>
+            <p>My&nbsp;Movies has been developed to&nbsp;work beautifully on&nbsp;desktop, especially on&nbsp;our Mac application, available on&nbsp;the Apple App Store. Designed to&nbsp;make the most of&nbsp;the big screen, My&nbsp;Movies can show your playlists, movie covers and comprehensive movie specifications all at&nbsp;the same time.</p>
+            <p>My&nbsp;Movies on&nbsp;Mac makes scrolling through movies effortless, making use of&nbsp;that extra space to&nbsp;find the ideal movie even quicker. Use the My&nbsp;Movies app to&nbsp;launch and watch movies directly on&nbsp;your Mac or&nbsp;wirelessly connect and stream straight over to&nbsp;your Smart&nbsp;TV.</p>
+            <a href="https://itunes.apple.com/us/app/my-movies-pro/id465069360?mt=12"></a>
+          </div>
+          <i class="default-display"></i>
+          <i class="retina-display"></i>
+        </div>
+      </div>
+    </section>
+    <section class="icon-set-block">
+      <div class="content">
+        <div class="row">
+          <span class="base-title">Icon Set</span>
+          <div class="icons">
+            <div class="separator">
+              <div>application menu icons</div>
+            </div>
+            <ul>
+              <li class="icon-1">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-2">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-3">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-4">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-5">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-6">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-7">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-8">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-9">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="helper"></li>
+              <li class="helper"></li>
+              <li class="helper"></li>
+            </ul>
+            <div class="separator">
+              <div>Other icons</div>
+            </div>
+            <ul>
+              <li class="icon-10">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-11">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-12">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-13">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-14">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-15">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-16">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-17">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-18">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-19">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-20">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-21">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-22">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-23">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-24">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-25">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-26">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-27">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-28">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-29">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-30">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-31">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-32">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-33">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-34">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-35">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-36">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-37">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-38">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-39">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-40">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-41">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-42">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-43">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-44">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-45">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-46">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-47">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-48">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-49">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-50">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-51">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-52">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-53">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icon-54">
+                <div>
+                  <i></i>
+                </div>
+              </li>
+              <li class="helper"></li>
+              <li class="helper"></li>
+              <li class="helper"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="other-pages-block">
+      <div class="content">
+        <div class="text">
+          <span class="section-title">Screens</span>
+          <p>My&nbsp;Movies was designed to&nbsp;bring a&nbsp;beautifully elegant experience to&nbsp;the user. We&rsquo;ve listened to&nbsp;what you want and upgraded the interface to&nbsp;make navigation effortless. Simple. Browsing your movie collection doesn&rsquo;t have to&nbsp;be&nbsp;difficult.</p>
+          <p>Take a&nbsp;look at&nbsp;the screenshots and let&nbsp;us know what you think!</p>
+        </div>
+        <div class="image">
+          <i class="default-display"></i>
+          <i class="retina-display"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="b59">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <span class="section-title">Facts</span>
+            <p>We&nbsp;employed ui&nbsp;kit in&nbsp;order to&nbsp;allow simultaneous work of&nbsp;a&nbsp;big team</p>
+          </div>
+          <ul>
+            <li>
+              <div class="thumb-item">
+                <div class="tasks">
+                  350
+                  <span>times featured in&nbsp;AppStore</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-item">
+                <div class="together">
+                  5
+                  <span>years together</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="thumb-item">
+                <div class="code">
+                  TOP&nbsp;1
+                  <span>in&nbsp;the US&nbsp;Catalogs</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow-block">
+      <div class="content">
+        <div class="row">
+          <div class="text">
+            <span class="section-title">Workflow</span>
+            <p>She gave my&nbsp;mother such a&nbsp;turn, that&nbsp;I have convinced I&nbsp;am indebted to&nbsp;Miss Betsey for having been born on&nbsp;a&nbsp;Friday.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image"></div>
+    </section>
+
+    <section class="b18">
+      <div class="content">
+        <img src="img/mmv/Brian-Binnerup.jpg" alt="Brian Binnerup from MyMovies about Shakuro">
+        <span class="section-title">Brian Binnerup</span>
+        <span>Founder</span>
+        <p>Our partnership with Shakuro goes back more than five years&nbsp;&mdash; a&nbsp;period where many different projects of&nbsp;ours have been both designed and developed by&nbsp;the Shakuro team.</p>
+        <p>Shakuro is&nbsp;for&nbsp;us the ideal partner, with the ability to&nbsp;provide quality work in&nbsp;many different areas, ranging from app development and graphical design to&nbsp;web projects.</p>
+        <p>The Shakuro team functions more as&nbsp;co-workers for&nbsp;us, over just a&nbsp;normal outsourcing partner. Each team member works close together with&nbsp;us a&nbsp;customer, and while we&nbsp;have the final word, we&nbsp;can always rely on&nbsp;the Shakuro team putting all their knowledge into ensuring the best possible end-product.</p>
+      </div>
+    </section>
+
+    <section class="drop-us-block drop-us-block--white">
+      <div class="content">
+        <div class="row">
+          <div class="form-wrapper">
+            <div class="form">
+              <span class="form-title">Have an&nbsp;idea?</span>
+              <span class="form-sub-title">We&nbsp;are always looking for our next great project</span>
+              <form action="contact-us.php" id="contactus" method="post">
+                <div>
+                  <textarea name="message" placeholder="Let's talk about it!"></textarea>
+                </div>
+                <div>
+                  <div>
+                    <input type="text" name="email" placeholder="name@mail.com">
+                  </div>
+                  <input type="button" name="submit" value="Send message">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-pagination-block section-04">
+      <div class="content">
+        <a href="cgplus.html" class="project-pagination-prev" title="Prev Project - COMPUTER GRAPHICS +">Prev <span>Project</span> <span class="project-pagination-name">COMPUTER GRAPHICS +</span></a>
+        <a href="xmastree.html" class="project-pagination-next" title="Next Project - Vida E-Tree">Next <span>Project</span> <span class="project-pagination-name">Vida E-Tree</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="content">
+      <div class="footer-top-part">
+        <div class="footer-logo">
+          <a class="footer-site-logo" href="index.html" target="_self">shakuro</a>
+        </div>
+        <div class="footer-nav">
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Extras</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="javascript:void(0)" class="footer-nav-link footer-nav-link--disable" title="Coming soon" data-original-title="Coming soon" data-placement="bottom" data-toggle="tooltip">ROR Development</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="/blog" class="footer-nav-link" title="Blog">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Where we are</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <p class="footer-nav-txt">2035 Sunset Lake Rd #2, Newark, 19702, Delaware, USA</p>
+                  <p class="footer-nav-txt">2/6 Tramvaynaya st. 350000, Krasnodar, Russia</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-nav-row">
+            <div class="footer-nav-row-wrapper">
+              <span class="footer-nav-title">Contact</span>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a class="footer-nav-tel" href="tel:+16465200670">+1&nbsp;646&nbsp;520 0670</a>
+                  <a class="footer-nav-email" href="mailto:hello@shakuro.com">hello@shakuro.com</a>
+                  <ul class="footer-soc-list">
+                    <li class="footer-soc-item">
+                      <a href="https://twitter.com/shakuro" class="footer-soc-icon-tweeter footer-soc-link" title="Tweeter"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://dribbble.com/shakuro" class="footer-soc-icon-dribbble footer-soc-link" title="Dribbble"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://www.behance.net/shakuro" class="footer-soc-icon-behance footer-soc-link" title="Behance"></a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="https://www.facebook.com/shakurocom/" class="footer-soc-icon-facebook footer-soc-link" title="Facebook"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-part">
+        <div class="footer-copyright">
+          <p class="footer-copyright-txt">&copy;&nbsp;2006&nbsp;&mdash; 2016 Shakuro</p>
+        </div>
+        <ul class="footer-partners-list">
+          <li class="footer-partners-item">
+            <span class="partner-clutch-icon"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div id="fixed"></div>
+  <div id="mobile-block">
+    <div class="mobile-menu">
+      <div class="content">
+        <nav>
+          <ul>
+            <li>
+              <a class="touch-enable" href="about.html">About</a>
+            </li>
+            <li>
+              <a class="touch-enable" href="showcase.html">Showcase</a>
+            </li>
+            <li>
+              <a class="touch-enable" href="/blog" title="Blog">Blog</a>
+            </li>
+            <li>
+              <a class="get-in-touch-mobile touch-enable" href="#">Request a&nbsp;quote</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="we-are-on">
+          <div class="separator">
+            <div>We&nbsp;are&nbsp;on</div>
+          </div>
+          <ul class="social-mobile">
+            <li class="dribble">
+              <a class="touch-enable" href="https://dribbble.com/shakuro">Dribbble</a>
+            </li>
+            <li class="behance">
+              <a class="touch-enable" href="https://www.behance.net/shakuro">Behance</a>
+            </li>
+            <li class="facebook">
+              <a class="touch-enable" href="https://www.facebook.com/shakurocom/">facebook</a>
+            </li>
+            <li class="twitter">
+              <a class="touch-enable" href="https://twitter.com/shakuro">Twitter</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/mymovies.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+.base-link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  padding: 0 2px;
+}
+
+.base-btn {
+  display: inline-block;
+  height: 36px;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: .1px;
+  font-weight: 400;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 18px;
+  text-transform: uppercase;
+  padding: 0 12px;
+  display: -moz-inline-stack;
+  text-align: center;
+}
+
+.gen-btn {
+  display: -moz-inline-stack;
+  display: inline-block;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  font-family: "Montserrat-Regular";
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.black-link {
+  color: #000;
+  @include transition(opacity .2s linear);
+
+  &:hover {
+    opacity: .68;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.transp-black-btn {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+}
+
+.transp-black-nav-btn {
+  background-color: transparent;
+  color: #000;
+  border-color: #000;
+  @include overlayfix;
+
+  &:hover {
+    color: rgba(0, 0, 0, .68);
+    border-color: rgba(0, 0, 0, .58);
+  }
+}
+
+.transparent-white-btn {
+  color: #fff;
+  background-color: transparent;
+  @include opacity(1);
+  @include transition(opacity .15s ease);
+
+  &:visited,
+  &:active,
+  &:focus {
+    color: #fff;
+    @include opacity(1);
+  }
+
+  &:hover {
+    @include opacity(.8);
+  }
+}
+
+.black-white-btn {
+  @include overlayfix;
+
+  &,
+  &:active,
+  &:visited,
+  &:focus {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    opacity: .76;
+  }
+}
+
+.blue-btn {
+  color: #fff;
+  background-color: $electric-blue;
+  @include transition(all .1s ease);
+
+  &:visited,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: $electric-blue-hover;
+  }
+
+  &:active {
+    background-color: $electric-blue-active;
+  }
+}
+
+.blue-aux-link {
+  color: $electric-blue;
+  @include transition(color .1s ease);
+
+  &:visited,
+  &:focus {
+    color: $electric-blue;
+  }
+
+  &:hover {
+    color: $electric-blue-hover;
+  }
+
+  &:active {
+    color: $electric-blue-active;
+  }
+}
+
+.blue-l1-link {
+  color: $blue-l1;
+  @include transition(color .1s ease);
+
+  &:visited,
+  &:focus {
+    color: $blue-l1;
+  }
+
+  &:hover {
+    color: $blue-l1-hover;
+  }
+
+  &:active {
+    color: $blue-l1-active;
+  }
+}
+
+.green-btn {
+  color: #fff;
+  background-color: $green-l1;
+  @include transition(background-color .2s linear);
+
+  &:active,
+  &:visited,
+  &:focus {
+    color: #fff;
+    background-color: $green-l1;
+  }
+
+  &:hover {
+    background-color: $green-l1-hover;
+  }
+}
+
+.yellow-btn {
+  color: $black-l1;
+  background-color: $yellow-l1;
+  @include transition(background-color .2s linear);
+
+  &:visited,
+  &:focus {
+    color: $black-l1;
+    background-color: $yellow-l1;
+  }
+
+  &:hover {
+    background-color: $yellow-l2;
+  }
+
+  &:active {
+    color: $black-l1;
+    background-color: $yellow-l1;
+  }
+}
+
+.yellow-aux-btn {
+  color: $black-l1;
+  background-color: #ffe609;
+  @include transition(background-color .2s linear);
+
+  &:visited,
+  &:focus {
+    color: $black-l1;
+    background-color: #ffe609;
+  }
+
+  &:hover {
+    background-color: #ffeb35;
+  }
+
+  &:active {
+    color: $black-l1;
+    background-color: #e0ca08;
+  }
+}
+
+.orange-btn {
+  color: #fff;
+  background-color: $orange-l1;
+  @include transition(background-color .2s linear);
+
+  &:visited,
+  &:focus {
+    color: #fff;
+    background-color: $orange-l1;
+  }
+
+  &:hover {
+    background-color: $orange-l1-hover;
+  }
+
+  &:active {
+    background-color: $orange-l1-active;
+  }
+}
+
+.aux-btn {
+  display: inline-block;
+  height: 46px;
+  font-size: 14px;
+  line-height: 46px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Montserrat-Light";
+  text-align: center;
+  border-radius: 25px;
+  padding: 0 24px;
+}
+
+.orange-burnt-btn {
+  color: #fff;
+  background-color: $orange-burnt;
+  @include transition(background-color .2s linear);
+
+  &:visited,
+  &:focus {
+    color: #fff;
+    background-color: $orange-burnt;
+  }
+
+  &:hover {
+    background-color: $orange-burnt-hover;
+  }
+
+  &:active {
+    background-color: $orange-burnt-active;
+  }
+}
+
+.red-btn {
+  color: #fff;
+  background-color: $red-l3;
+  @include transition(background-color .2s linear);
+
+  &:visited,
+  &:focus {
+    color: #fff;
+    background-color: $red-l3;
+  }
+
+  &:hover {
+    background-color: $red-l3-hover;
+  }
+
+  &:active {
+    background-color: $red-l3-active;
+  }
+}
+
+

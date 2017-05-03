@@ -1,0 +1,930 @@
+/*keyframes-animation--------------------------------------------------[BEGIN]*/
+  // spin
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform:rotate(360deg);
+    }
+  }
+/*keyframes-animation----------------------------------------------------[END]*/
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.field input::-webkit-input-placeholder {
+  color: $gray-l12;
+  text-overflow: ellipsis;
+}
+
+.field  input::-moz-placeholder {
+  color: $gray-l12;
+  text-overflow: ellipsis;
+}
+
+.field input:-moz-placeholder {
+  color: $gray-l12;
+  text-overflow: ellipsis;
+}
+
+.field input:-ms-input-placeholder {
+  color: $gray-l12;
+  text-overflow: ellipsis;
+}
+
+.field  input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.field input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.field input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.field  input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.payment-page {
+  padding-top: 33px;
+}
+
+.payment-block {
+  .content {
+    max-width: 722px;
+    padding: 0 29px;
+  }
+}
+
+.payment-form {
+  position: relative;
+  margin: 0 0 74px;
+  @include clearfix();
+
+  > .four-four,
+  > .three-four,
+  > .two-four,
+  > .one-four {
+    padding: 0 11px;
+  }
+
+  input[type="submit"] {
+    @extend .black-white-btn;
+    width: 146px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.four-four {
+  width: 100%;
+}
+
+.three-four {
+  width: 75%;
+}
+
+.two-four {
+  width: 50%;
+}
+
+.one-four {
+  width: 25%;
+}
+
+.aux-error-base {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.aux-error-input {
+  background-color: $red-l1;
+  border-color: $red-d1;
+  color: $red-d1;
+  @include box-shadow(none);
+
+  &:focus,
+  &:focus:hover {
+    background-color: $gray-l8;
+    border-color: $gray-d2;
+    color: #000;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $red-l1;
+    border-color: $red-d1;
+    color: $red-d1;
+  }
+}
+
+.field-wrapper {
+  float: left;
+  margin: 13px 0 14px;
+  @include clearfix();
+
+  &:last-of-type {
+    margin: 17px 0 0;
+    min-height: inherit;
+  }
+
+  > * {
+    width: 100%;
+    float: left;
+  }
+
+  .error {
+    .field-input {
+      @extend .aux-error-input;
+    }
+  }
+
+  .field-error-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+  }
+
+  .field-error-descr {
+    @extend .aux-error-base;
+    font-size: 11px;
+    line-height: 14px;
+    color: $red-d1;
+    font-family: "Montserrat-Bold", sans-serif;
+    margin: 8px 0 0;
+    padding: 0 0 0 2px;
+    letter-spacing: .9px;
+  }
+}
+
+.payment-title {
+  display: block;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 2.2px;
+  font-family: "Montserrat-Light", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin: 33px 0 40px;
+}
+
+.field-title {
+  display: block;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 1.8px;
+  font-weight: 400;
+  font-family: "Montserrat-Regular", sans-serif;
+  color: $black-l3;
+  text-transform: uppercase;
+  margin: 0 0 11px;
+  padding-left: 2px;
+}
+
+.required-field {
+  margin: 0;
+
+  &:before {
+    content: '*';
+    display: inline-block;
+    font-size: 14px;
+    line-height: 10px;
+    font-weight: 400;
+    color: $red-d1;
+    position: relative;
+    top: 1px;
+  }
+}
+
+.field-cont {
+  position: relative;
+}
+
+.field {
+  height: 40px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  .exp-date-wrapper {
+    height: 40px;
+    background: $gray-l6;
+    color: $gray-l12;
+    border-radius: 4px;
+    border: 1px solid $gray-l14;
+    @include clearfix();
+
+    > * {
+      float: left;
+    }
+
+    > span {
+      display: inline-block;
+      width: 6px;
+      height: 38px;
+      text-align: center;
+      padding: 6px 0;
+      margin: 0;
+    }
+
+    &,
+    input[type="text"] {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    input[type="text"] {
+      display: inline-block;
+      height: 38px;
+      background-color: transparent;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      border: none;
+      text-align: center;
+    }
+
+    input#pay-expMonth {
+      width: 42px;
+      padding-left: 4px;
+      padding-right: 2px;
+      text-align: right;
+    }
+
+    input#pay-expYear {
+      width: 95px;
+      padding-left: 2px;
+      padding-right: 9px;
+      text-align: left;
+    }
+  }
+}
+
+.error {
+  .field {
+    .exp-date-wrapper {
+      @extend .aux-error-input;
+    }
+  }
+}
+
+input,
+input[type="text"] {
+  &.field-input {
+    background: $gray-l6;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Montserrat-Light";
+    color: #000;
+    border: 1px solid $gray-l14;
+    @include transition(border-color .1s linear, color .1s linear);
+
+    &:hover {
+      background-color: $gray-l8;
+      border-color: $gray-l12;
+    }
+
+    &:focus {
+      color: #000;
+      background-color: $gray-l8;
+      border-color: $gray-l12;
+    }
+  }
+}
+
+.card-item-wrapper {
+  width: 100%;
+  max-width: 351px;
+  border: 1px solid $gray-l14;
+  padding: 27px 20px 33px 19px;
+  border-radius: 4px;
+  @include box-shadow(0 6px 24px rgba(0, 0, 0, .05));
+  @include clearfix();
+}
+
+.card-field {
+  float: left;
+
+  &.expire-date {
+    width: 70%;
+  }
+
+  &.cv-code {
+    width: 28%;
+    float: right;
+  }
+
+  &:first-of-type {
+    margin: 0 0 26px;
+  }
+
+  .error {
+    .field-input {
+      @extend .aux-error-input;
+    }
+  }
+
+  .field-error-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 100%;
+    padding: 0 0 0 9px;
+  }
+}
+
+.field-error-popup {
+  @extend .aux-error-base;
+  min-width: 85px;
+  min-height: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  background-color: $red-d1;
+  color: #fff;
+  font-family: "Montserrat-Light", sans-serif;
+  padding: 12px;
+  margin: 0;
+  border-radius: 4px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-right: 7px solid $red-d1;
+    position: absolute;
+    top: 20px;
+    left: 3px;
+    margin-top: -6px;
+  }
+}
+
+.card-field-title {
+  @extend .field-title;
+}
+
+/*contacts-block-------------------------------------------------------[BEGIN]*/
+  .contacts-block {
+    @extend .main-three-column-block;
+    padding-bottom: 56px;
+
+    .content {
+      max-width: 960px;
+    }
+
+    ul {
+      margin: 72px 0 0;
+    }
+
+    img {
+      width: 97px;
+      height: 78px;
+      display: inline-block !important;
+    }
+
+    h4,
+    a {
+      font-family: "Montserrat-Light", sans-serif;
+      color: #000;
+    }
+
+    h4 {
+      padding: 0 0 8px;
+    }
+
+    p {
+      line-height: 22px;
+
+      + p {
+        margin: 2px 0 0;
+      }
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    figcaption {
+      padding: 12px 0 0;
+    }
+  }
+/*contacts-block---------------------------------------------------------[END]*/
+
+.field-select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $gray-l14;
+  background-color: $gray-l6;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  @include transition(none);
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top: 5px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    margin-top: -3px;
+  }
+
+  select {
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 30px 7px 10px;
+    border: none;
+    @include box-shadow(none);
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    overflow: hidden;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+  }
+}
+
+.error {
+  .field-select {
+    @extend .aux-error-input;
+  }
+}
+
+.field-cmplx-cont {
+  position: relative;
+  @include clearfix();
+
+  .field-expire-month {
+    width: 76px;
+    float: left;
+    margin-right: 11px;
+  }
+
+  .field-expire-year {
+    width: 88px;
+    float: left;
+    margin-left: 11px;
+  }
+}
+
+//form overlay
+.form-overlay {
+  position: absolute;
+  display: inline;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.overlay-spinner {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  border: 3px solid #000;
+  border-right-color: #000;
+  border-radius: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  @include animation(spin 1s linear infinite);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    margin-top:-2px;
+    vertical-align: top;
+  }
+}
+
+/*notifications-block--------------------------------------------------[BEGIN]*/
+  .notifications-list {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100500;
+  }
+
+  .notification-item {
+    padding: 37px 0;
+    margin: 0 0 20px;
+    position: absolute;
+    width: 100%;
+
+    &.danger {
+      background-color: $red-d1;
+      color: #fff;
+      top: -150px;
+    }
+
+    &.success {
+      background-color: $green-l3;
+      color: #fff;
+      top: -150px;
+    }
+  }
+
+  .notification-close {
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-size: 56px;
+    line-height: 27px;
+    font-family: 'Courier New', sans-serif;
+    padding: 0 8px;
+    right: 4px;
+    top: 50%;
+    margin-top: -14px;
+    @include transition(all .2s ease);
+    cursor: pointer;
+  }
+
+  .notification-text {
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 38px;
+    margin: 0;
+  }
+
+  .danger {
+    .notification-text {
+      color: #fff;
+    }
+
+    .notification-close {
+      color: $red-l2;
+
+      &:hover,
+      &:focus,
+      &:visited {
+        color: $red-l2-hover;
+      }
+
+      &:active {
+        color: $red-l2-active;
+      }
+    }
+  }
+
+  .success {
+    .notification-text {
+      color: #fff;
+    }
+
+    .notification-close {
+      color: #fff;
+      opacity: .7;
+
+      &:hover,
+      &:focus,
+      &:visited {
+        opacity: .9;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+/*notifications-block----------------------------------------------------[END]*/
+
+.freeze {
+  .payment-form input[type="submit"] {
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .social {
+    .dribble a {
+      padding-left: 25px;
+
+      &:before {
+        @include ps(dribble-icon-small-tablet);
+        left: -7px;
+      }
+    }
+
+    .behance a {
+      padding-left: 37px;
+
+      &:before {
+        @include ps(behance-icon-small-tablet);
+        left: 6px;
+      }
+    }
+
+    .facebook a:before {
+      @include ps(facebook-icon-small-tablet);
+    }
+
+    .twitter a {
+      padding-left: 30px;
+
+      &:before {
+        @include ps(twitter-icon-small-tablet);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 767px) {
+  .social {
+    text-align: center;
+    text-align-last: center;
+    margin-top: 17px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 254px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    li {
+      margin: 36px 55px 0 0;
+    }
+
+    .behance,
+    .twitter {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .dribble {
+      margin-top: 0;
+    }
+
+    .twitter a:before {
+      left: -8px;
+    }
+
+    .dribble a {
+      padding-left: 32px;
+
+      &:before {
+        @include ps(dribble-icon-small-mobile);
+      }
+    }
+
+    .behance a {
+      padding-left: 33px;
+
+      &:before {
+        @include ps(behance-icon-small-mobile);
+      }
+    }
+
+    .facebook a {
+      padding-left: 25px;
+
+      &:before {
+        @include ps(facebook-icon-small-mobile);
+        left: 0;
+      }
+    }
+
+    .twitter a {
+      padding-left: 26px;
+
+      &:before {
+        @include ps(twitter-icon-small-mobile);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 13px;
+  }
+
+  /*contacts-block-----------------------------------------------------[BEGIN]*/
+    .contacts-block {
+      ul {
+        max-width: 703px;
+        padding: 0 30px;
+        margin: 72px auto 0;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      .san-francisco,
+      .montpellier,
+      .dubai {
+        margin: 0 auto;
+      }
+    }
+  /*contacts-block-------------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 640px) {
+    .content {
+      padding: 0 40px;
+    }
+
+    .one-four, .two-four,
+    .three-four, .four-four {
+      width: 100%;
+    }
+
+    .field-wrapper {
+      .field-error-wrapper {
+        position: inherit;
+      }
+
+      &:last-of-type {
+        text-align: center;
+      }
+    }
+
+    .payment-form input[type="submit"] {
+      float: initial;
+    }
+
+    .card-field {
+      .field-error-wrapper {
+        left: 50%;
+        margin-left: -100px;
+        top: 100%;
+        padding: 9px 0 0 0;
+        text-align: center;
+      }
+    }
+
+    .field-error-popup:before {
+      border: 0 solid transparent;
+      border-right-width: 7px;
+      border-left-width: 7px;
+      border-bottom: 7px solid $red-d1;
+      top: 9px;
+      left: 50%;
+      margin-top: -6px;
+      margin-left: -6px;
+    }
+
+  /*contacts-block-----------------------------------------------------[BEGIN]*/
+    .contacts-block {
+      ul {
+        padding: 0;
+      }
+
+      li {
+        width: 100%;
+        padding: 0 0 38px;
+
+        &,
+        &:nth-child(2n+1),
+        &:nth-child(2n+2) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &:last-child {
+          padding: 0;
+        }
+      }
+
+      figure {
+        width: 100%;
+        max-width: 360px;
+        padding: 0 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .san-francisco,
+      .montpellier,
+      .dubai {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  /*contacts-block-------------------------------------------------------[END]*/
+
+  /*notifications-block------------------------------------------------[BEGIN]*/
+    .notification-item {
+      padding: 28px 0;
+    }
+
+    .notification-text {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: .7px;
+      padding: 0 8px;
+    }
+  /*notifications-block------------------------------------------------[END]*/
+}
+
+@media screen and (max-width: 431px) {
+  .card-item-wrapper {
+    max-width: inherit;
+  }
+
+  .card-field {
+    &:nth-of-type(2) {
+      margin: 0 0 26px;
+    }
+
+    &.expire-date,
+    &.cv-code {
+      width: 100%;
+    }
+
+    &.cv-code {
+      float: left;
+    }
+  }
+}

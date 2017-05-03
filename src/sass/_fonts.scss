@@ -1,0 +1,16 @@
+@import "compass/css3";
+
+// $MyriadPro: "MyriadPro-Light" "MyriadPro-Regular" "MyriadPro-Semibold"
+
+// @each $font-face in $MyriadPro
+//     @font-face
+//         font-family: $font-face
+//         font-style: normal
+//         font-weight: normal
+//         src: local("../fonts/#{$font-face}.otf")
+//         src: url("../fonts/#{$font-face}.eot"), url("../fonts/#{$font-face}.eot?#iefix") format('embedded-opentype'), url('../fonts/#{$font-face}.otf')
+
+// =font($font, $style: normal, $weight: normal)
+//     font-family: $font, Arial, Helvetica, sans-serif
+//     font-style:  $style
+//     font-weight: $weight

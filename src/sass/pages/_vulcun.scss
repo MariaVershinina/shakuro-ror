@@ -1,0 +1,1203 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url("../fonts/Avenir-Book/Avenir-Book.eot");
+  src: url("../fonts/Avenir-Book/Avenir-Book.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Avenir-Book/Avenir-Book.otf") format("otf");
+  src: url("../fonts/Avenir-Book/Avenir-Book.svg") format("svg");
+  src: url("../fonts/Avenir-Book/Avenir-Book.ttf") format("truetype");
+  src: url("../fonts/Avenir-Book/Avenir-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-title {
+  width: 100%;
+  font-size: 24px;
+  line-height: 24px;
+  color: $gray-d1;
+  padding-bottom: 50px;
+  @include ib;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: #ddd;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -48px;
+  }
+}
+
+.section-title-aux {
+  text-align: center;
+}
+
+p {
+  color: $gray-l3;
+}
+
+.btn1 a {
+  color: #000;
+
+  &:hover {
+    color: #757575;
+  }
+}
+
+.btn2 a {
+  color: #000;
+
+  &:hover {
+    background: #fff;
+    color: #757575;
+    border-color: #757575;
+  }
+
+  &:active {
+    background: #fff;
+    color: #757575;
+    border-color: #757575;
+  }
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+.mb-block {
+  background-color: #01060d;
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
+  position: relative;
+  @include transition(height .3s ease-in-out);
+  font-family: "Montserrat-Light", sans-serif;
+
+  .hmb-title {
+    position: relative;
+    font-size: 44px;
+    line-height: 48px;
+    font-family: "Avenir-Book", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2.4px;
+    padding: 109px 0 33px 0;
+    color: $green-l1;
+
+    &:before {
+      content: '';
+      @include s-vulcun(vulcun-logo);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -30.1px;
+    }
+
+    &:after {
+      content: '';
+      background: rgba(255, 255, 255, .42);
+      width: 90px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -45px;
+    }
+  }
+
+  .hmb-txt {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: $gray-l13;
+    padding: 26px 0 24px;
+  }
+
+  .btn {
+    width: auto;
+    min-width: 200px;
+    @extend .aux-btn;
+    @extend .green-btn;
+  }
+}
+
+.mb-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/vulcun/b45.jpg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  @include transition(opacity .3 linear);
+  opacity: .25;
+}
+
+.mb-wrapper {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mb-vert-centr {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mb-content {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.approach-block {
+  background-image: url(../img/vulcun/our-approache-bg.jpg);
+  padding-bottom: 97px;
+  border-bottom: 1px solid #2f2f3b;
+  @extend .base-block;
+  @extend .title-brdr;
+  @extend .approach-dark-theme;
+
+  img {
+    width: 135px;
+    height: 111px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  ul {
+    width: 100%;
+    max-width: 560px;
+    margin: 53px auto 0;
+    padding: 0 20px;
+    text-align: left;
+    text-align-last: left;
+  }
+
+  li {
+    @include ib;
+    margin-left: 19px;
+    margin-top: -3px;
+    vertical-align: top;
+
+    &.custom {
+      margin-left: 207px;
+      margin-top: 0;
+
+      figcaption {
+        padding-top: 40px;
+        padding-left: 18px;
+      }
+
+      img {
+        width: 144px;
+        height: 104px;
+      }
+    }
+  }
+
+  figcaption {
+    padding-top: 36px;
+  }
+}
+
+.b48 {
+  background: #fff;
+  min-height: 1007px;
+  padding-top: 92px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  overflow-x: hidden;
+
+  .section-title-aux {
+    text-align: left;
+  }
+
+  .row {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  .text {
+    width: 440px;
+    padding-top: 135px;
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  figure {
+    width: 1119px;
+    height: 830px;
+    top: 0;
+    left: 516px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.b49 {
+  width: 100%;
+  position: relative;
+
+  div {
+    width: 100%;
+    height: 898px;
+  }
+
+  .default-display {
+    background: url(../img/vulcun/b49.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .retina-display {
+    background: url(../img/vulcun/b49@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.b50 {
+  background: #fff;
+  min-height: 968px;
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 65px;
+
+  .section-title-aux {
+    text-align: left;
+  }
+
+  .row {
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  .text {
+    width: 440px;
+    padding-top: 140px;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 2;
+  }
+
+  a {
+    @include s(appstore);
+    margin-top: 27px;
+    @include transition(none);
+  }
+
+  figure {
+    width: 636px;
+    height: auto;
+    top: 50px;
+    left: 360px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.b51 {
+  background: $gray-l6;
+  width: 100%;
+  min-height: 672px;
+  padding: 95px 0 70px 0;
+  margin-top: -101px;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e9e9e9;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .content {
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  ul {
+    width: 100%;
+    @include ib;
+    text-align: justify;
+    text-justify: newspaper;
+    text-align-last: justify;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    margin-top: 36px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      @include ib;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  li {
+    width: 230px;
+    text-align: center;
+    text-align-last: center;
+    @include ib;
+    vertical-align: top;
+    @include box-shadow(0 0 20px 0 rgba(0, 0, 0, 0.5));
+  }
+
+  .desktop li {
+    @include transform(translateY(300px));
+    @include opacity(0);
+    @include transition(transform 1000ms ease, opacity 1000ms ease);
+
+    &.uped {
+      @include transform(translateY(0));
+      @include opacity(1);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+  }
+}
+
+.b52 {
+  background: #2f2f3b;
+  border-top: 1px solid #e9e9e9;
+  padding-top: 95px;
+  padding-bottom: 34px;
+  position: relative;
+  overflow-x: hidden;
+
+  .section-title-aux {
+    color: $gray-l6;
+  }
+
+  .separator {
+    background: #3c3c47;
+    color: #828289;
+    margin-top: 34px;
+
+    > div {
+      background: #2f2f3b;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .icons {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .badges {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .badges-set {
+    width: 840px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  ul {
+    width: 100%;
+    @include ib;
+    text-align: justify;
+    text-justify: newspaper;
+    text-align-last: justify;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    padding-bottom: 57px;
+
+    &:after {
+      content: "";
+      width: 100%;
+      @include ib;
+      overflow: hidden;
+      visibility: hidden;
+    }
+  }
+
+  .badges-list {
+    margin-top: 120px;
+  }
+
+  .badges-set-list {
+    margin-top: 5px;
+  }
+
+  .icons-item {
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    @include ib;
+    border: 1px solid #353542;
+    vertical-align: top;
+    position: relative;
+
+    @for $i from 1 through 18 {
+      &.icon-#{$i} {
+        @include s-vulcun(icon-#{$i});
+        @include ib;
+      }
+    }
+  }
+
+  .badges-item {
+    margin-left: 30px;
+    margin-right: 30px;
+    @include ib;
+    vertical-align: bottom;
+    text-align: center;
+    text-align-last: center;
+    position: relative;
+
+    span {
+      font-size: 12px;
+      line-height: 12px;
+      color: #cacaca;
+      display: block;
+      letter-spacing: 1px;
+      padding-top: 15px;
+    }
+
+    @for $i from 1 through 5 {
+      &.badge-#{$i} div {
+        @include s-vulcun(badge-#{$i});
+        @include ib;
+      }
+    }
+  }
+
+  .badges-set-item {
+    margin-top: 83px;
+    margin-left: 30px;
+    margin-right: 30px;
+    @include ib;
+    vertical-align: bottom;
+    text-align: center;
+    text-align-last: center;
+    position: relative;
+
+    @for $i from 1 through 30 {
+      &.badge-#{$i} {
+        @include s-vulcun(badgeset-#{$i});
+        @include ib;
+      }
+    }
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .b51 {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .b48 .text {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  label {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+  }
+
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn4 a {
+    padding: 0 24px;
+  }
+
+  .b48 {
+    min-height: 0;
+    padding-top: 95px;
+    padding-bottom: 89px;
+
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .text {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    .section-title-aux {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    figure {
+      width: 702px;
+      height: 527px;
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-top: 86px;
+      margin-left: -46px;
+    }
+  }
+
+  .b49 {
+    div {
+      height: 673px;
+    }
+
+    .default-display {
+      background: url(../img/vulcun/b49-tablet.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .retina-display {
+      background: url(../img/vulcun/b49-tablet@2x.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .b50 {
+    padding-top: 95px;
+    min-height: 0;
+
+    .content {
+      max-width: 560px;
+    }
+
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .section-title-aux {
+      text-align: center;
+    }
+
+    .text {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    a {
+      margin: 27px auto 0;
+    }
+
+    figure {
+      width: 820px;
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-left: -138px;
+      margin-top: 96px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .b51 {
+    padding-bottom: 35px;
+    margin-top: -5px;
+    min-height: 0;
+
+    ul {
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      -moz-text-align-last: center;
+      text-align-last: center;
+    }
+
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .b52 {
+    .content {
+      width: 640px;
+      padding: 0;
+    }
+
+    .row {
+      width: 100%;
+    }
+
+    .separator {
+      width: 600px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-top: 40px;
+
+      > div {
+        font-size: 24px;
+        line-height: 24px;
+        font-family: "Montserrat-Regular";
+        top: -15px;
+        color: #828289;
+        text-transform: none;
+      }
+    }
+
+    .icons {
+      width: 100%;
+    }
+
+    .badges {
+      width: 600px;
+    }
+
+    .badges-set {
+      width: 640px;
+    }
+
+    .badges,
+    .badges-set {
+      text-align: justify;
+      text-align-last: justify;
+    }
+
+    .icons-list {
+      margin-top: 37px;
+    }
+
+    .badges-list {
+      margin-top: 65px;
+      padding-bottom: 55px;
+    }
+
+    .badges-set-list {
+      margin-top: 2px;
+    }
+
+    .icons-item {
+      margin-left: 23px;
+      margin-right: 23px;
+      margin-top: 45px;
+
+      @for $i from 1 through 18 {
+        &.icon-#{$i} {
+          @include s-vulcun(icon-#{$i}-tablet);
+          @include ib;
+        }
+      }
+    }
+
+    .badges-item {
+      margin-left: 0;
+      margin-right: 0;
+
+      span {
+        font-size: 9px;
+        padding-top: 10px;
+      }
+
+      @for $i from 1 through 5 {
+        &.badge-#{$i} div {
+          @include s-vulcun(badge-#{$i}-tablet);
+          @include ib;
+        }
+      }
+    }
+
+    .badges-set-item {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 63px;
+
+      @for $i from 1 through 30 {
+        &.badge-#{$i} {
+          @include s-vulcun(badgeset-#{$i}-tablet);
+          @include ib;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-family: "Montserrat-Light";
+    text-align: center;
+    text-align-last: center;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  label {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  textarea {
+    font-size: 16px;
+    line-height: 21px;
+    height: 125px;
+    padding: 10px 15px;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+    border-radius: 5px;
+  }
+
+  .separator {
+    height: 1px;
+    margin-top: 44px;
+    letter-spacing: 2.5px;
+
+    > div {
+      font-size: 12px;
+      line-height: 12px;
+      padding: 0 25px;
+      top: -8px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .btn4 a {
+    font-size: 14px;
+    line-height: 36px;
+    font-family: "Montserrat-Regular";
+    padding: 0 14px;
+    border-radius: 5px;
+  }
+
+  .b48 {
+    min-height: 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    .row {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .section-title-aux {
+      text-align: center;
+      text-align-last: center;
+    }
+
+    .text {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    p {
+      text-align: center;
+      text-align-last: center;
+    }
+
+    figure {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: 107%;
+      height: auto;
+      margin-top: 39px;
+      margin-left: -4%;
+    }
+  }
+
+  .b49 {
+    div {
+      height: 336px;
+    }
+
+    .default-display {
+      background: url(../img/vulcun/b49-mobile.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .retina-display {
+      background: url(../img/vulcun/b49-mobile@2x.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .b50 {
+    min-height: 0;
+    padding-top: 40px;
+    padding-bottom: 0;
+    text-align: center;
+    text-align-last: center;
+
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .text {
+      width: 100%;
+      padding-top: 0;
+    }
+
+    .section-title-aux {
+      text-align: center;
+      text-align-last: center;
+    }
+
+    p {
+      text-align: center;
+      text-align-last: center;
+    }
+
+    a {
+      @include s(appstore-mobile);
+      @include ib;
+      margin-top: 40px;
+    }
+
+    figure {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 146%;
+      height: auto;
+      margin-top: 43px;
+      margin-left: -28%;
+    }
+  }
+
+  .b51 {
+    min-height: 0;
+    padding-top: 47px;
+    padding-bottom: 32px;
+    text-align: center;
+    text-align-last: center;
+    margin-top: -5px;
+
+    .section-title {
+      font-size: 22px;
+      line-height: 30px;
+      font-family: "Montserrat-Light";
+      text-transform: uppercase;
+      padding-bottom: 0;
+      text-align: center;
+      text-align-last: center;
+      color: #2c3241;
+    }
+
+    ul {
+      text-align: center;
+      text-align-last: center;
+      margin-top: 0;
+    }
+
+    li {
+      width: 115px;
+      margin-left: 9px;
+      margin-right: 9px;
+      margin-top: 27px;
+    }
+  }
+
+  .b52 {
+    padding-top: 43px;
+
+    .content {
+      width: 100%;
+      min-width: 288px;
+      padding: 0 40px;
+    }
+
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .separator {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+
+      > div {
+        letter-spacing: 1px;
+        text-transform: none;
+      }
+    }
+
+    .icons {
+      width: 288px;
+      left: -9px;
+    }
+
+    .badges {
+      width: 288px;
+      left: -9px;
+    }
+
+    .badges-set {
+      width: 288px;
+      left: -9px;
+    }
+
+    .icons-list {
+      margin-top: 20px;
+      padding-bottom: 12px;
+    }
+
+    .badges-list {
+      margin-top: 35px;
+      padding-bottom: 15px;
+    }
+
+    .badges-set-list {
+      margin-top: 5px;
+      padding-bottom: 15px;
+    }
+
+    .icons-item {
+      width: 30px;
+      height: 30px;
+      margin-left: 9px;
+      margin-right: 9px;
+      margin-top: 20px;
+
+      @for $i from 1 through 18 {
+        &.icon-#{$i} {
+          @include s-vulcun(icon-#{$i}-mobile);
+          @include ib;
+        }
+      }
+    }
+
+    .badges-item {
+      margin-left: 9px;
+      margin-right: 9px;
+
+      span {
+        font-size: 6px;
+        line-height: 6px;
+        padding-top: 3px;
+      }
+
+      @for $i from 1 through 5 {
+        &.badge-#{$i} div {
+          @include s-vulcun(badge-#{$i}-mobile);
+          @include ib;
+        }
+      }
+    }
+
+    .badges-set-item {
+      margin-left: 9px;
+      margin-right: 9px;
+      margin-top: 28px;
+
+      @for $i from 1 through 30 {
+        &.badge-#{$i} {
+          @include s-vulcun(badgeset-#{$i}-mobile);
+          @include ib;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mb-block {
+    height: 536px !important;
+    min-height: 536px !important;
+  }
+
+  .mb-bg {
+    background-image: url(../img/vulcun/b45-tablet.jpg);
+  }
+
+  .approach-block {
+    background-image: url(../img/vulcun/our-approache-bg-tablet.jpg);
+    padding-bottom: 45px;
+
+    .content {
+      max-width: 560px;
+    }
+
+    figcaption {
+      padding-top: 12px;
+    }
+
+    ul {
+      text-align: center;
+      text-align-last: center;
+      margin-top: 0;
+    }
+
+    img {
+      width: 69px;
+      height: 57px;
+    }
+
+    li {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 28px;
+
+      &.custom {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 48px;
+
+        figcaption {
+          padding-top: 12px;
+          position: relative;
+          left: -8px;
+        }
+
+        img {
+          width: 72px;
+          height: 52px;
+          position: relative;
+          left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .mb-block {
+    height: 387px !important;
+    min-height: 387px !important;
+
+    .hmb-title {
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 1px;
+      padding: 54px 0 21px 0;
+
+      &:before {
+        @include s-vulcun(vulcun-logo-mobile);
+        margin-left: -16px;
+      }
+
+      &:after {
+        background: rgba(255, 255, 255, 0.42);
+        width: 45px;
+        height: 1px;
+        margin-left: -22.5px;
+      }
+    }
+
+    .hmb-txt {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 18px 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .b51 {
+    ul {
+      max-width: 280px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .b52 {
+    .content {
+      padding: 0 15px;
+    }
+  }
+
+  .mb-content {
+    padding: 0 20px;
+  }
+}

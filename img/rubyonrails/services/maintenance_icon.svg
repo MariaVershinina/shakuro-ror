@@ -1,0 +1,82 @@
+<svg id="maintenance_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #b9b9c9;
+      }
+
+      .cls-2, .cls-4, .cls-5 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: #b9b9c9;
+      }
+
+      .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#filter);
+      }
+
+      .cls-4, .cls-5 {
+        stroke: #ea135a;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#ea135a"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="browser">
+    <rect class="cls-1" x="6" y="68" width="30" height="2" rx="1" ry="1"/>
+    <rect id="Rectangle_646_copy" data-name="Rectangle 646 copy" class="cls-1" x="6" y="62" width="36" height="2" rx="1" ry="1"/>
+    <rect id="Rectangle_646_copy_2" data-name="Rectangle 646 copy 2" class="cls-1" x="6" y="56" width="22" height="2" rx="1" ry="1"/>
+    <path class="cls-2" d="M4,1H72a3,3,0,0,1,3,3V72a3,3,0,0,1-3,3H4a3,3,0,0,1-3-3V4A3,3,0,0,1,4,1Z"/>
+    <g id="icon_copy" data-name="icon copy">
+      <g>
+        <circle class="cls-1" cx="6" cy="6" r="2"/>
+        <circle id="Ellipse_5_copy" data-name="Ellipse 5 copy" class="cls-1" cx="12" cy="6" r="2"/>
+        <circle id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" class="cls-1" cx="18" cy="6" r="2"/>
+        <rect class="cls-1" x="2" y="10" width="72" height="2"/>
+      </g>
+    </g>
+  </g>
+  <g id="settings" class="cls-3">
+    <path id="Rectangle_647_copy_3" data-name="Rectangle 647 copy 3" class="cls-4" d="M49.133,36.756H47.982a10.221,10.221,0,0,1-.961,2.268l0.82,0.808a1.81,1.81,0,0,1,0,2.586l-1.312,1.293a1.874,1.874,0,0,1-2.624,0l-0.845-.833a10.348,10.348,0,0,1-2.218.942v1.323A1.871,1.871,0,0,1,38.957,47H37.073a1.871,1.871,0,0,1-1.884-1.857V43.82a10.354,10.354,0,0,1-2.2-.93l-0.973.958a1.9,1.9,0,0,1-2.665,0l-1.333-1.313a1.838,1.838,0,0,1,0-2.626l0.953-.939a10.175,10.175,0,0,1-.926-2.213H26.867a1.842,1.842,0,0,1-1.855-1.829V33.1a1.842,1.842,0,0,1,1.855-1.828h1.172a10.189,10.189,0,0,1,.948-2.261l-0.827-.815a1.81,1.81,0,0,1,0-2.586l1.312-1.293a1.876,1.876,0,0,1,2.624,0l0.839,0.826a10.355,10.355,0,0,1,2.253-.962V22.857A1.871,1.871,0,0,1,37.073,21h1.885a1.871,1.871,0,0,1,1.884,1.857V24.18a10.348,10.348,0,0,1,2.2.93l0.974-.96a1.9,1.9,0,0,1,2.665,0l1.333,1.313a1.838,1.838,0,0,1,0,2.627l-0.953.939a10.176,10.176,0,0,1,.936,2.241h1.142A1.842,1.842,0,0,1,50.988,33.1v1.829A1.842,1.842,0,0,1,49.133,36.756Z"/>
+    <circle class="cls-5" cx="38" cy="34" r="6"/>
+  </g>
+</svg>
