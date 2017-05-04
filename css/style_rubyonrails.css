@@ -104,8 +104,27 @@ time, mark, audio, video {
 html {
   -webkit-text-size-adjust: 100%;
   line-height: 1;
-}
+  width: 100%;
 
+}
+body {
+  width: 100%;
+  /*width: expression((document.compatMode && document.compatMode == 'CSSICompat')?(document.documentElement.clientWidth < 1000?"1000px":"auto"):(document.body.clientWidth < 1000?"1000px":"auto"));*/
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media screen and (max-width: 768px) {
+     html { overflow-x: hidden;
+     }
+    body {
+       min-width: 320px;
+      overflow-x:hidden;
+  }
+}
 ol, ul {
   list-style: none;
 }
@@ -3819,7 +3838,5 @@ img {
   }
 }
 /*mobile-header--------------------------------------------------------[END]*/
-
-
 
 
