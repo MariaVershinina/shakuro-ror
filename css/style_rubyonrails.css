@@ -47,6 +47,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.eot'),
+         url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.eot') format('embedded-opentype'),
+         url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.woff2') format('woff2'),
+         url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.woff') format('woff'),
+         url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.ttf') format('truetype'),
+         url('../fonts/Montserrat-ExtraBold/MontserratExtraBold.svg#MontserratExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+  }
 
 @font-face {
   font-family: "ProximaNova-Regular";
@@ -105,10 +116,12 @@ html {
   -webkit-text-size-adjust: 100%;
   line-height: 1;
   width: 100%;
+  height:100%;
 
 }
 body {
   width: 100%;
+
   /*width: expression((document.compatMode && document.compatMode == 'CSSICompat')?(document.documentElement.clientWidth < 1000?"1000px":"auto"):(document.body.clientWidth < 1000?"1000px":"auto"));*/
   position: relative;
   top: auto;
@@ -1228,6 +1241,7 @@ img {
 /*base-buttons-and-links-------------------------------------------------[END]*/
 /*base-tag-----------------------------------------------[BEGIN]*/
 .content {
+  width:100%;
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 20px;
@@ -1255,6 +1269,7 @@ img {
 }
 .base-title-highlight {
   color: #ea135a;
+  font-family: "Montserrat-ExtraBold", sans-serif;
 }
 
 .icon-1, .icon-2, .icon-3, .icon-4, .icon-5 {
@@ -1267,28 +1282,47 @@ img {
   background-repeat: no-repeat;
   background-color: transparent;
 }
+@media screen and (min-width: 641px) and (max-width: 960px) {
 
-@media screen and (max-width: 768px) {
+  .content {
+    width:100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+}
+
+/*@media screen and (max-width: 768px) {
   .base-title {
     font-size: 38px;
     line-height: 38px;
+
   }
 
   .text-big {
     font-size: 20px;
     line-height: 26px;
   }
-}
+}*/
 @media screen and (max-width: 640px) {
+
+.content {
+    width:100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
   .base-title {
-    font-size: 56px;
-    line-height: 67px;
-    margin: 0 0 90px;
+    font-size: 28px;
+    line-height: 38px;
+    margin: 0 0 28px;
   }
 
   .text-big {
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 21px;
+    line-height: 32px;
   }
 }
 
@@ -1435,6 +1469,20 @@ img {
   background: #000;
 }
 
+@media screen and (min-width: 641px) and (max-width:1023px){
+.header-site-logo {
+  font-size: 11px;
+  line-height: 15px;
+  padding: 6px 0 2px 52px;
+}
+.header-item .nav-link {
+
+  font-size: 7px;
+  line-height: 9px;
+  padding: 3px 2px;
+ 
+}
+}
 @media screen and (max-width: 860px) {
   .header-item {
     margin: 0 4px;
@@ -1923,7 +1971,7 @@ img {
 
 @media screen and (max-width: 768px){
  .ui-block {
-    padding: 130px 0 80px;
+    padding: 75px 0 40px;
   }
 }
 /*ui-block-----------------------------------------------------------------[End]*/
@@ -2192,7 +2240,7 @@ img {
   }
 
  .project-text-bl {
-    padding: 130px 0 80px;
+    padding: 65px 0 40px;
   }
 }
 
@@ -2455,6 +2503,10 @@ img {
   font-family: "Montserrat-Bold", sans-serif;
 }
 
+.hmb-content {
+    margin-top: 48px;
+  }
+
 .hmb-content .hmb-txt {
   font-size: 24px;
   line-height: 36px;
@@ -2463,6 +2515,31 @@ img {
   font-family: "Montserrat-Light", sans-serif;
   color: #fff;
   padding: 22px 40px 43px;
+}
+
+@media screen and (min-width: 769px) and (max-width:1023px){
+  .hmb-block {
+    min-height: 415px !important;
+    height: 415px !important;
+  }
+
+  .hmb-block .scroll-to-form {
+    width: 230px;
+  }
+
+  .hmb-content .hmb-title {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    padding: 0 20px;
+  }
+
+  .hmb-content .hmb-txt {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 20px 27px;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -2532,9 +2609,9 @@ img {
   display: table-cell;
   font-size: 112px;
   font-weight: bold;
-  width: 184px;
+/*  width: 184px;*/
   color: #42bc79;
-  line-height: 104px;
+  line-height: 112px;
   font-family: "Montserrat-Bold", sans-serif;
 }
 
@@ -2544,6 +2621,7 @@ img {
   line-height: 37px;
   display: table-cell;
   padding-bottom: 4px;
+  padding-left:20px;
   color: #3f3f4b;
 }
 
@@ -2557,22 +2635,26 @@ img {
 
 
   .heading-list-title {
-    font-size: 160px;
-    width:200px;
-    line-height: 160px;
+    font-size: 80px;
+    width:90px;
+    line-height: 80px;
   }
 
   .heading-list-txt {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 14px;
+    line-height: 21px;
     vertical-align: middle;
-    padding-left:20px;
+    padding-left:5px;
     padding-bottom:0px;
-    
   }
- 
+ .heading-list li {
+  display: table;
+  width: 100%;
+  padding: 0px;
+  float: left;
+}
  .assest-block{
-    padding: 130px 0 80px;
+    padding: 75px 0 40px;
   }
 }
 /*assest-block-------------------------------------------------------[END]*/
@@ -2605,20 +2687,20 @@ img {
 #services .icon-1 {
   background-image: url('../img/sprites/ror_services.png');
   background-position: 0px 0px;
-  height: 76px;
-  width: 76px;
+  height: 75px;
+  width: 75px;
 }
 #services .icon-2 {
   background-image: url('../img/sprites/ror_services.png');
   background-position: 0px -176px;
-  height: 76px;
-  width: 76px;
+  height: 75px;
+  width: 75px;
  }
  #services .icon-3 {
   background-image: url('../img/sprites/ror_services.png');
   background-position: 0px -352px;
-  height: 76px;
-  width: 76px;
+  height: 75px;
+  width: 75px;
  }
  #services .icon-4 {
   background-image: url('../img/sprites/ror_services.png');
@@ -2653,8 +2735,7 @@ img {
   margin: 0;
 }
 
-@media screen and (min-width: 769px) {
-  .services-item {
+ .services-item {
     width: 50%;
     padding: 0 12px 45px 8px;
   }
@@ -2674,34 +2755,6 @@ img {
     clear: left;
   }
 
-  #services .icon-1 {
-    background-image: url('../img/sprites/ror_services.png');
-    background-position: 0px 0px;
-    height: 76px;
-    width: 76px;
-  }
-
-  #services .icon-2 {
-    background-image: url('../img/sprites/ror_services.png');
-    background-position: 0px -176px;
-    height: 76px;
-    width: 76px;
-  }
-
-  #services .icon-3 {
-    background-image: url('../img/sprites/ror_services.png');
-    background-position: 0px -352px;
-    height: 76px;
-    width: 76px;
-  }
-
-  #services .icon-4 {
-    background-image: url('../img/sprites/ror_services.png');
-    background-position: 0px -528px;
-    height: 76px;
-    width: 76px;
-  }
-}
 @media screen and (max-width: 640px) {
   .services-block {
   background-color: #fff;
@@ -2709,7 +2762,7 @@ img {
 }
 
   .services-list {
-    margin: 65px 0 0;
+    margin: 36px 0 0;
   }
 
   .services-item {
@@ -2719,58 +2772,63 @@ img {
   }
 
   .services-item-title{
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 21px;
+    line-height: 32px;
     display: inline-block;
     width: 100%;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-Regular", sans-serif;
     color: #3f3f4b;
-    margin: 50px 0 50px;
+    margin: -5px 0 18px;
     text-align:center;
   }
 
   .services-item-txt {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-ExtraLight", sans-serif;
     color: #3f3f4b;
     margin: 0;
   }
-
+    #services .services-item:nth-child(2n+1) {
+    padding-left: 0;
+    padding-right: 0px;
+    }
   #services .icon-1 {
+    width:100%;
     background-image: url('../img/sprites/ror_services.png');
-    background-position: 30px 0px;
+    background-position: 15px 0px;
     background-size: cover;
-    height: 160px;
-    width: 220px;
+    height: 105px;
+    width: 105px;
+    text-align:center;
   }
 
   #services .icon-2 {
     background-image: url('../img/sprites/ror_services.png');
-    background-position: 30px -365px;
+    background-position: 15px -174px;
     background-size: cover;
-    height: 160px;
-    width: 220px;
+    height: 105px;
+    width: 105px;
   }
  
   #services .icon-3 {
     background-image: url('../img/sprites/ror_services.png');
-    background-position: 30px -730px;
+    background-position: 15px -349px;
     background-size: cover;
-    height: 160px;
-    width: 220px;
+    height: 105px;
+    width: 105px;
   }
 
   #services .icon-4 {
     background-image: url('../img/sprites/ror_services.png');
-    background-position: 30px -1094px;
+    background-position: 15px -522px;
     background-size: cover;
-    height: 160px;
-    width: 220px;
+    height: 105px;
+    width: 105px;
   }
 }
 @media screen and (min-width: 641px) and (max-width: 768px) {
@@ -2790,7 +2848,7 @@ img {
     clear: left;
   }
   .services-block{
-    padding: 130px 0 80px;
+    padding: 65px 0 40px;
   }
 }
 
@@ -2800,7 +2858,7 @@ img {
     padding: 0 0 24px;
   }
   .services-block{
-    padding: 130px 0 80px;
+    padding: 65px 0 40px;
   }
 }
 /*services-block---------------------------------------------------------[END]*/
@@ -2808,7 +2866,7 @@ img {
 /*engagement-block---------------------------------------------------------[START]*/
 .engagement-block {
   background-color: #fff;
-  padding: 122px 0 128px;
+  padding: 30px 0 32px;
 }
 
 @media screen and (min-width: 769px) {
@@ -2856,25 +2914,25 @@ img {
     background-image: url('../img/sprites/ror_engagement.png');
     background-position: 0px 0px;
     background-size: cover;
-    height: 190px;
-    width: 190px;
+    height: 95px;
+    width: 95px;
   }
   #engagement .icon-2 {
     background-image: url('../img/sprites/ror_engagement.png');
-    background-position: 0px -350px;
+    background-position: 0px -176px;
     background-size: cover;
-    height: 190px;
-    width: 190px;
+    height: 95px;
+    width: 95px;
   }
   #engagement .icon-3 {
     background-image: url('../img/sprites/ror_engagement.png');
-    background-position: 0px -618px;
+    background-position: 0px -330px;
     background-size: cover;
-    height: 190px;
-    width: 190px;
+    height: 95px;
+    width: 95px;
   }
   #engagement .services-item-title{
-     margin: 0px 0 40px;
+     margin: 0px 0 18px;
   }
 }
 /*engagement-block------------------------------------------------------[END]*/
@@ -2939,20 +2997,21 @@ img {
 }
 @media screen and (max-width: 640px) {
   .ror-team .ror-team-item h3{
+    font-size: 21px;
+    line-height: 32px;
     display: inline-block;
     width: 100%;
-    font-size: 42px;
-    line-height: 63px;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-Regular", sans-serif;
     color: #3f3f4b;
-    margin: 100px 0 30px;
-    text-align:center
+    margin: 40px 0 18px;
+    text-align:center;
+
   }
   .ror-team .ror-team-txt{
-    font-size: 28px;
-    line-height: 42px;
+     font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-ExtraLight", sans-serif;
@@ -2962,14 +3021,16 @@ img {
   }
   
   .ror-team .ror-team-list ul{
-    margin-bottom:120px;
+    margin-bottom:60px;
     margin-left:0px;
   }
   .ror-team::before{
     top: 0;
     left: 0;
-    height: 583px;
-    width: 640px;
+    background: url(../img/rubyonrails/ror-team-bg.png) 100% 100% no-repeat;
+    background-position: 50% 0;
+    height: 290px;
+    width:100%;
   }
   .ror-team .content{
     height: auto;
@@ -2979,7 +3040,7 @@ img {
     float:none;
     display: table;
     width: 100%;
-    height: 583px;
+    height: 290px;
   }
   .ror-team .display h2{
     display: table-cell;
@@ -3106,31 +3167,31 @@ img {
 
 @media screen and (max-width: 640px) {
   .question-block {
-    /*padding: 46px 0;*/
+     height: 213px;
+      padding: 6px 0 59px;
   }
   .question-block::before {
     background-position: 50% 0;
     opacity: 1;
     background-image: url(../img/rubyonrails/ror-team-bg.png);
+    
   }
+ 
   .question-block .content{
-    height: 427px;
+    /*height: 213px;*/
   }
   .question-block .question-txt{
-    font-size: 48px;
-    line-height: 58px;
-    margin: 0 0 100px;
+    font-size: 24px;
+    line-height: 28px;
+  padding: 50px 0px;
+    letter-spacing: 0px;
   }
   .question-block .question-link{
-     font-size: 48px;
-     line-height: 48px;
-     border-bottom-width: 3px; 
+     font-size: 24px;
+     line-height: 28px;
+     border-bottom-width: 2px; 
   }
-  .question-txt,
-  .question-link {
-    font-size: 28px;
-    line-height: 38px;
-  }
+ 
 }
 /*question-block-block--------------------------------------------------------[END]*/
 
@@ -3381,30 +3442,35 @@ img {
 }
 @media screen and (max-width: 768px){
   .tools-block {
-    padding: 130px 0 80px;
+    padding: 65px 0 40px;
   }
 }
 @media screen and (max-width: 640px) {
+  .tools-block .base-title {
+    margin: 0 1px; 
+  }
   .tools-title {
-    font-size: 42px;
-    line-height: 63px;
+    font-size: 21px;
+    line-height: 32px;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-Regular", sans-serif;
     color: #3f3f4b;
     text-align: center;
-    margin: 58px 0 50px;
+    margin: 29px 0 25px;
   }
   .tools-item {
-    width: 175px;
-    height: 175px;
-    margin-right: 25px;
-    margin-bottom:80px;
+    width:30%;
+    min-width:90px;
+    height:90px;
+    margin-left: 5px;  
+    margin-right: 5px;
+    margin-bottom:40px;
     display: -moz-inline-stack;
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    border: 4px solid #eeeeee;
+    border: 2px solid #eeeeee;
     border-radius:10px;
     vertical-align: top;
     position: relative;
@@ -3417,111 +3483,112 @@ img {
   }
   #javascript .icon-1 {
     background-image: url('../img/sprites/ror_javascript.png');
-    background-position: 42px 35px;
-    height: 175px;
-    width: 175px;
+    background-position: 22px 18px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
   }
   #javascript .icon-2 {
     background-image: url('../img/sprites/ror_javascript.png');
-    background-position: 42px -148px;
-    height: 175px;
-    width: 175px;
+    background-position: 22px -72px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
   }
   #javascript .icon-3 {
     background-image: url('../img/sprites/ror_javascript.png');
-    background-position: 2px -264px;
-    height: 175px;
-    width: 150px;
+    background-position: 2px -152px;
+    height: 90px;
+    width: 85px;
     background-size: cover;
   }
   #javascript .icon-4 {
     background-image: url('../img/sprites/ror_javascript.png');
-    background-position: 35px -570px;
-    height: 175px;
-    width: 210px;
+    background-position: 15px -332px;
+    height: 90px;
+    width: 120px;
     background-size: cover;
   }
   #infrastructure .icon-1 {
     background-image: url('../img/sprites/ror_infrastructure.png');
-    background-position: 30px 48px;
-    height: 175px;
-    width: 130px;
+    background-position: 15px 20px;
+    height: 90px;
+    width: 70px;
     background-size: cover;
   }
   #infrastructure .icon-2 {
     background-image: url('../img/sprites/ror_infrastructure.png');
-    background-position: 25px -117px;
-    height: 175px;
-    width: 125px;
+    background-position: 15px -70px;
+    height: 90px;
+    width: 70px;
     background-size: cover;
   }
   #infrastructure .icon-3 {
     background-image: url('../img/sprites/ror_infrastructure.png');
-    background-position: 25px -275px;
-    height: 175px;
-    width: 125px;
+    background-position: 15px -160px;
+    height: 90px;
+    width: 70px;
     background-size: cover;
   }
   #infrastructure .icon-4 {
     background-image: url('../img/sprites/ror_infrastructure.png');
-    background-position: 25px -450px;
-    height: 175px;
-    width: 125px;
+    background-position: 15px -235px;
+    height: 90px;
+    width: 65px;
     background-size: cover;
   }
   #infrastructure .icon-5{
     background-image: url('../img/sprites/ror_infrastructure.png');
-    background-position: 30px -880px;
-    height: 175px;
-    width: 175px;
+    background-position: 15px -452px;
+    height: 90px;
+    width: 90px;
     background-size: cover;
   }
   #database .icon-1{
     background-image: url('../img/sprites/ror_database.png');
-    background-position: 40px 50px;
+    background-position: 22px 25px;
     background-size: cover;
-    height: 175px;
-    width: 175px;
+    height: 90px;
+    width: 90px;
   }
   #database .icon-2{
     background-image: url('../img/sprites/ror_database.png');
-    background-position: 0px -65px;
+    background-position: 1px -35px;
     background-size: cover;
-    height: 175px;
-    width: 140px;
+    height: 90px;
+    width: 75px;
   }
   #database .icon-3{
     background-image: url('../img/sprites/ror_database.png');
-    background-position: 40px -250px;
+    background-position: 20px -125px;
     background-size: cover;
-    height: 175px;
-    width: 175px;
+    height: 90px;
+    width: 90px;
   }
   #database .icon-4{
     background-image: url('../img/sprites/ror_database.png');
-    background-position: 20px -650px;
+    background-position: 7px -394px;
     background-size: cover;
-    height: 175px;
-    width: 250px;
+    height: 90px;
+    width: 150px;
   }
   #database .icon-5{
     background-image: url('../img/sprites/ror_database.png');
-    background-position: 40px -600px;
+    background-position: 20px -250px;
     background-size: cover;
-    height: 175px;
-    width: 175px;
+    height: 90px;
+    width: 75px;
   }
-  .tools-txt{
+  .tools-txt
     display:block;
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0;
     font-weight: 400;
     font-family: "Montserrat-Light", sans-serif;
     color: #3f3f4b;
     text-align: center;
+    padding:5px;
   }
 }
 /*tools-block--------------------------------------------------------[End]*/
